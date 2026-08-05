@@ -1,0 +1,513 @@
+Captcha: 1508
+
+===============================
+*** Total modules found: 24
+===============================
+
+
+===============================
+*** MODULE 1: Member
+===============================
+
+
+===============================================
+***Submodules found for Member: 9
+==================================================
+
+Submodule 1:
+Member Info is working fine.
+Submodule 2:
+Member Bank Uncertain List is working fine.
+Submodule 3:
+Member Group is working fine.
+Submodule 4:
+Tag Management is working fine.
+Submodule 5:
+Member Transaction is working fine.
+Submodule 6:
+Member Online is working fine.
+Submodule 7:
+New Registrant is working fine.
+Submodule 8:
+Member Trace is working fine.
+Submodule 9:
+Member Verification is working fine.
+
+===============================
+*** MODULE 2: Admin Management
+===============================
+
+
+===============================================
+***Submodules found for Admin Management: 3
+==================================================
+
+Submodule 1:
+Department is working fine.
+Submodule 2:
+Agent is working fine.
+Submodule 3:
+Admin log is working fine.
+
+===============================
+*** MODULE 3: Referral
+===============================
+
+
+===============================================
+***Submodules found for Referral: 7
+==================================================
+
+Submodule 1:
+Referral is working fine.
+Submodule 2:
+Referral Bonus is working fine.
+Submodule 3:
+Referral Settings is working fine.
+Submodule 4:
+Referral Commission Settings is working fine.
+Submodule 5:
+Referral Commission List is working fine.
+Submodule 6:
+Referral Terms and Conditions is working fine.
+Submodule 7:
+Leaderboard Data is working fine.
+
+===============================
+*** MODULE 4: Affiliate
+===============================
+
+
+===============================================
+***Submodules found for Affiliate: 14
+==================================================
+
+Submodule 1:
+Affiliate Approval is working fine.
+Submodule 2:
+Affiliate List is working fine.
+Submodule 3:
+Affiliate Approval History is working fine.
+Submodule 4:
+Affiliate Domain is working fine.
+Submodule 5:
+Affiliate Group is working fine.
+Submodule 6:
+Affiliate Page Setting is working fine.
+Submodule 7:
+Affiliate Contact Setting is working fine.
+Submodule 8:
+Affiliate Generate Comm is working fine.
+Submodule 9:
+Affiliate Commission History is working fine.
+Submodule 10:
+Affiliate Withdrawal is working fine.
+Submodule 11:
+Affiliate Deposit is working fine.
+Submodule 12:
+Affiliate Transfer History is working fine.
+Submodule 13:
+Affiliate Adjustment is working fine.
+Submodule 14:
+Affiliate Currency Rate Setting is working fine.
+
+===============================
+*** MODULE 5: Finance Management
+===============================
+
+
+===============================================
+***Submodules found for Finance Management: 14
+==================================================
+
+Submodule 1:
+Merchant Bank Settings is working fine.
+Submodule 2:
+Bank List Setting is working fine.
+Submodule 3:
+Bank Details is working fine.
+Submodule 4:
+Deposit is working fine.
+Submodule 5:
+Express Deposit is working fine.
+Submodule 6:
+Withdraw is working fine.
+Submodule 7:
+Deposit Gateway Pending List is working fine.
+Submodule 8:
+Adjustment is working fine.
+Submodule 9:
+Withdraw Condition List is working fine.
+Submodule 10:
+Withdraw Burn List is working fine.
+Submodule 11:
+QR Deposit is working fine.
+Submodule 12:
+Deposit Currency Rate Setting is working fine.
+Submodule 13:
+Withdraw Currency Rate Setting is working fine.
+Submodule 14:
+Deposit Details is working fine.
+
+===============================
+*** MODULE 6: Promotion
+===============================
+
+
+===============================================
+***Submodules found for Promotion: 5
+==================================================
+
+Submodule 1:
+Member Promotions is working fine.
+Submodule 2:
+Promotion Code is working fine.
+Submodule 3:
+Promotion Checking is working fine.
+Submodule 4:
+Journey Mission Bonus Received Record is working fine.
+Submodule 5:
+Cashback Received Record is working fine.
+
+===============================
+*** MODULE 7: Instant Rebate
+===============================
+
+
+===============================================
+***Submodules found for Instant Rebate: 3
+==================================================
+
+Submodule 1:
+Instant Rebate Setting is working fine.
+Submodule 2:
+Instant Rebate Release is working fine.
+Submodule 3:
+Instant Rebate Disclaimer is working fine.
+
+===============================
+*** MODULE 8: Rebate
+===============================
+
+
+===============================================
+***Submodules found for Rebate: 3
+==================================================
+
+Submodule 1:
+Rebate Release is working fine.
+Submodule 2:
+Rebate Settings is working fine.
+Submodule 3:
+Rebate Disclaimer is working fine.
+
+===============================
+*** MODULE 9: VIP Mode
+===============================
+
+
+===============================================
+***Submodules found for VIP Mode: 5
+==================================================
+
+Submodule 1:
+VIP Settings is working fine.
+Submodule 2:
+VIP Level Point Record is working fine.
+Submodule 3:
+Bonus Received Record is working fine.
+Submodule 4:
+VIP Display Settings is working fine.
+Submodule 5:
+Leaderboard is working fine.
+
+===============================
+*** MODULE 10: Mission Diary
+===============================
+
+
+===============================================
+***Submodules found for Mission Diary: 5
+==================================================
+
+Submodule 1:
+No action button found in submodule: Daily Mission
+Daily Mission is working fine.
+Submodule 2:
+No action button found in submodule: Accumulative Mission
+Accumulative Mission is working fine.
+Submodule 3:
+Period Mission is working fine.
+Submodule 4:
+Mission Adjustment Record is working fine.
+Submodule 5:
+Mission Diary Settings is working fine.
+
+===============================
+*** MODULE 11: Lucky Wheel
+===============================
+
+
+===============================================
+***Submodules found for Lucky Wheel: 6
+==================================================
+
+Submodule 1:
+Lucky Wheel is working fine.
+Submodule 2:
+No action button found in submodule: Lucky Wheel Setting
+Lucky Wheel Setting is working fine.
+Submodule 3:
+Point Edited Report is working fine.
+Submodule 4:
+Leaderboard Data is working fine.
+Submodule 5:
+Lucky wheel Terms and Conditions is working fine.
+Submodule 6:
+Lucky Wheel Banner Settings is working fine.
+
+===============================
+*** MODULE 12: Angpow
+===============================
+
+
+===============================================
+***Submodules found for Angpow: 4
+==================================================
+
+Submodule 1:
+Angpow Settings is working fine.
+Submodule 2:
+Angpow Reward History is working fine.
+Submodule 3:
+Leaderboard Data is working fine.
+Submodule 4:
+Angpow Term and Condition is working fine.
+
+===============================
+*** MODULE 13: Tournament
+===============================
+
+
+===============================================
+***Submodules found for Tournament: 2
+==================================================
+
+Submodule 1:
+Tournament Settings List is working fine.
+Submodule 2:
+Tournament Reward is working fine.
+
+===============================
+*** MODULE 14: Verify Reward
+===============================
+
+
+===============================================
+***Submodules found for Verify Reward: 2
+==================================================
+
+Submodule 1:
+Verified Reward Settings is working fine.
+Submodule 2:
+Verify Reward List is working fine.
+
+===============================
+*** MODULE 15: Personnel Report
+===============================
+
+
+===============================================
+***Submodules found for Personnel Report: 6
+==================================================
+
+Submodule 1:
+Member Report is working fine.
+Submodule 2:
+All Member Report is working fine.
+Submodule 3:
+Member Statistics Report is working fine.
+Submodule 4:
+Referral Summary is working fine.
+Submodule 5:
+All Affiliate Report is working fine.
+Submodule 6:
+All Sub Affiliate Report is working fine.
+
+===============================
+*** MODULE 16: Finance Report
+===============================
+
+
+===============================================
+***Submodules found for Finance Report: 5
+==================================================
+
+Submodule 1:
+Company Report is working fine.
+Submodule 2:
+Outstanding Report is working fine.
+Submodule 3:
+Transaction Summary is working fine.
+Submodule 4:
+Daily New Deposit is working fine.
+Submodule 5:
+FTD/STD Report is working fine.
+
+===============================
+*** MODULE 17: Game Report
+===============================
+
+
+===============================================
+***Submodules found for Game Report: 4
+==================================================
+
+Submodule 1:
+Provider Report is working fine.
+Submodule 2:
+Game Statistics Report is working fine.
+Submodule 3:
+Jackpot Report is working fine.
+Submodule 4:
+Premium Game Report is working fine.
+
+===============================
+*** MODULE 18: Activity Report
+===============================
+
+
+===============================================
+***Submodules found for Activity Report: 8
+==================================================
+
+Submodule 1:
+Promotion Statistic is working fine.
+Submodule 2:
+Mission Reward History is working fine.
+Submodule 3:
+Lucky Wheel Report is working fine.
+Submodule 4:
+Provider Rebate History is working fine.
+Submodule 5:
+Member Rebate History is working fine.
+Submodule 6:
+Provider Instant Rebate History is working fine.
+Submodule 7:
+Member Instant Rebate History is working fine.
+Submodule 8:
+VIP statistics report is working fine.
+
+===============================
+*** MODULE 19: Casino Setting
+===============================
+
+
+===============================================
+***Submodules found for Casino Setting: 5
+==================================================
+
+Submodule 1:
+Game List is working fine.
+Submodule 2:
+Provider Setting is working fine.
+Submodule 3:
+No action button found in submodule: Web Featured Game
+Web Featured Game is working fine.
+Submodule 4:
+Member bet limit is working fine.
+Submodule 5:
+Group bet limit is working fine.
+
+===============================
+*** MODULE 20: Frontend Setting
+===============================
+
+
+===============================================
+***Submodules found for Frontend Setting: 14
+==================================================
+
+Submodule 1:
+Logo & Favicon is working fine.
+Submodule 2:
+Banner is working fine.
+Submodule 3:
+Affiliate Banner Setting is working fine.
+Submodule 4:
+Advertisement setting is working fine.
+Submodule 5:
+Announcement Setting is working fine.
+Submodule 6:
+Contact Settings is working fine.
+Submodule 7:
+SEO Metadata is working fine.
+Submodule 8:
+SEO Scripts is working fine.
+Submodule 9:
+SEO Footer is working fine.
+Submodule 10:
+General Info Setting is working fine.
+Submodule 11:
+Tracker is working fine.
+Submodule 12:
+No action button found in submodule: Partnership
+Partnership is working fine.
+Submodule 13:
+No action button found in submodule: Account Access Setting
+Account Access Setting is working fine.
+Submodule 14:
+Blog Setting is working fine.
+
+===============================
+*** MODULE 21: Message
+===============================
+
+
+===============================================
+***Submodules found for Message: 2
+==================================================
+
+Submodule 1:
+TAC List is working fine.
+Submodule 2:
+Member Message is working fine.
+
+===============================
+*** MODULE 22: Maintenance
+===============================
+
+
+===============================================
+***Submodules found for Maintenance: 1
+==================================================
+
+Submodule 1:
+Game Provider Maintenance is working fine.
+
+===============================
+*** MODULE 23: Risk Control
+===============================
+
+
+===============================================
+***Submodules found for Risk Control: 2
+==================================================
+
+Submodule 1:
+Roadblock is working fine.
+Submodule 2:
+IP Whitelist is working fine.
+
+===============================
+*** MODULE 24: Laive Chat
+===============================
+
+
+===============================================
+***Submodules found for Laive Chat: 1
+==================================================
+
+Submodule 1:
+No action button found in submodule: Laive Chat Admin
+Laive Chat Admin is working fine.
