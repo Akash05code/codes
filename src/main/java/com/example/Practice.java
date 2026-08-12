@@ -10,7 +10,7 @@ public class Practice {
     public static void main(String[] args) throws InterruptedException {
 
         int startFromIndex = 1; //CHANGE THIS VALUE TO START FROM ANY CURRENCY INDEX 
-        // THB=1 BDT=2 INR=3 PKR=4 SGD=5 AUD=6 HKD=7 IDR=8 MYR=9 NPR=10 PHP=11 MMK=12 USD=13 VND=14 LAK=15 TWD=16 PNG=17 
+        // THB=1 BDT=2 INR=3 PKR=4 SGD=5 AUD=6 HKD=7 MYR=8 NPR=9 PHP=10 MMK=11 IDR=12 USD=13 VND=14 LAK=15 TWD=16 PNG=17 
 
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
@@ -69,7 +69,7 @@ public class Practice {
 
             System.out.println("----- All merchants selected successfully.-----");
  
-            String desiredProvider = "MEGAH5-CARD [MEGAH5-CARD]"; //   
+            String desiredProvider = "UGv2 [UG]"; // 
             WebElement providerDropdown = null;     
                                                 
                                                   
@@ -113,11 +113,11 @@ public class Practice {
 
             WebElement startDate = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("start_dateA")));
             startDate.clear();
-            startDate.sendKeys("2026-08-07 09:00:00");
+            startDate.sendKeys("2026-08-12 13:00:00");
 
             WebElement endDate = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("end_dateA")));
             endDate.clear();
-            endDate.sendKeys("2026-08-07 13:00:00");
+            endDate.sendKeys("2026-08-12 15:00:00");
 
         
             WebElement remark = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("remarkA")));

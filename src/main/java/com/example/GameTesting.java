@@ -19,14 +19,14 @@ public class GameTesting {
 
         driver.manage().window().maximize();
 
-        driver.get("https://member-1hima.ibstest.site/en-np/slot");
+        driver.get("https://member-npr96.ibstest.site/ne-np/slot");
         Thread.sleep(20000);
 
         List<WebElement> providers = driver.findElements(
                 By.xpath("//div[contains(@class,'mt-5 flex items-center slot_btn_container w-full overflow-auto light-scrollbar-h pb-[10px]')]//button[@aria-label]")
         );
 
-        for (int p = 3; p < providers.size(); p++) {   //change the provider accordingly
+        for (int p = 34; p < providers.size(); p++) {   //change the provider accordingly
 
             providers = driver.findElements(
                     By.xpath("//div[contains(@class,'mt-5 flex items-center slot_btn_container w-full overflow-auto light-scrollbar-h pb-[10px]')]//button[@aria-label]")
