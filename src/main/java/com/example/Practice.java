@@ -69,7 +69,7 @@ public class Practice {
 
             System.out.println("----- All merchants selected successfully.-----");
  
-            String desiredProvider = "UGv2 [UG]"; // 
+            String desiredProvider = "9WICKETS [9WICKETS]"; //
             WebElement providerDropdown = null;     
                                                 
                                                   
@@ -113,11 +113,11 @@ public class Practice {
 
             WebElement startDate = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("start_dateA")));
             startDate.clear();
-            startDate.sendKeys("2026-08-12 13:00:00");
+            startDate.sendKeys("2026-08-17 14:00:00");
 
             WebElement endDate = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("end_dateA")));
             endDate.clear();
-            endDate.sendKeys("2026-08-12 15:00:00");
+            endDate.sendKeys("2026-08-17 16:00:00");
 
         
             WebElement remark = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("remarkA")));

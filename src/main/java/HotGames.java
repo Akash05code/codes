@@ -238,8 +238,15 @@ public class HotGames {
 
         workbook.close();
     }
-     public static void clearPriorityGames(WebDriver driver, WebDriverWait wait)
-        throws InterruptedException {
+  // ============================================================
+// CLEAR ALL GAMES FROM RIGHT-SIDE PRIORITY GAME LIST
+// ============================================================
+// ============================================================
+// CLEAR ALL GAMES FROM RIGHT-SIDE PRIORITY GAME LIST
+// ============================================================
+public static void clearPriorityGames(
+        WebDriver driver,
+        WebDriverWait wait) throws InterruptedException {
 
     JavascriptExecutor js = (JavascriptExecutor) driver;
 
@@ -247,131 +254,257 @@ public class HotGames {
     System.out.println("Clearing Priority Game list...");
     System.out.println("======================================");
 
-    /*
-     * Find the Priority Game section.
-     *
-     * The exact heading text may be:
-     * Priority Game
-     * Priority Games
-     *
-     * We first try to locate the section using its visible text.
-     */
-
-    List<WebElement> prioritySections = driver.findElements(
-            By.xpath("//*[contains(normalize-space(),'Priority Game')]")
-    );
-
-    if (prioritySections.isEmpty()) {
-        System.out.println("⚠ Priority Game section not found.");
-        return;
-    }
-
-    WebElement priorityText = prioritySections.get(0);
-
-    /*
-     * Move upward through the DOM until we find a reasonably large
-     * container containing the priority game cards.
-     */
-    WebElement priorityContainer = null;
-
-    try {
-        priorityContainer = priorityText.findElement(
-                By.xpath("./ancestor::div[contains(@class,'flex')][1]")
-        );
-    } catch (Exception e) {
-        System.out.println("⚠ Could not identify Priority Game container.");
-        return;
-    }
-
-    /*
-     * Find the left-arrow/remove buttons.
-     *
-     * Your HTML contains:
-     *
-     * <button class="btn !p-1 !text-xl">
-     *
-     * and the SVG path contains rotate(180).
-     */
-    List<WebElement> removeButtons = priorityContainer.findElements(
-            By.xpath(".//button[contains(@class,'!text-xl')]")
-    );
-
-    System.out.println(
-            "Priority buttons detected: " + removeButtons.size()
-    );
-
     int removedCount = 0;
 
     /*
-     * Remove one game at a time.
+     * IMPORTANT:
      *
-     * We always re-find the buttons because after clicking one,
-     * Vue updates the DOM and old WebElements can become stale.
+     * Right-side Priority Game button:
+     *
+     * <button class="btn !p-1 !text-xl">
+     *     <svg>
+     *         <path transform="... rotate(180)">
+     *
+     * The rotate(180) is the important identifier.
+     *
+     * Left-side Add buttons do NOT have rotate(180).
      */
-    while (true) {
 
-        List<WebElement> buttons = priorityContainer.findElements(
-                By.xpath(".//button[contains(@class,'!text-xl')]")
+    By priorityButtonLocator = By.xpath(
+            "//button[contains(@class,'!text-xl')]"
+            + "[.//path[contains(@transform,'rotate(180)')]]"
+    );
+
+    // =========================================================
+    // FIRST CHECK
+    // =========================================================
+
+    List<WebElement> initialButtons =
+            driver.findElements(priorityButtonLocator);
+
+    System.out.println(
+            "Priority buttons found initially: "
+                    + initialButtons.size()
+    );
+
+    if (initialButtons.isEmpty()) {
+
+        System.out.println(
+                "No Priority Game buttons found."
         );
 
+        System.out.println("======================================");
+
+        return;
+    }
+
+    // =========================================================
+    // REMOVE ONE BY ONE
+    // =========================================================
+
+    while (true) {
+
+        /*
+         * IMPORTANT:
+         *
+         * Always find the button again.
+         *
+         * Vue changes the DOM after every click.
+         */
+
+        List<WebElement> buttons =
+                driver.findElements(priorityButtonLocator);
+
+        System.out.println(
+                "Priority buttons remaining: "
+                        + buttons.size()
+        );
+
+        // -----------------------------------------------------
+        // No more priority buttons
+        // -----------------------------------------------------
+
         if (buttons.isEmpty()) {
+
+            System.out.println(
+                    "No more Priority Game buttons."
+            );
+
             break;
         }
 
-        boolean removed = false;
+        WebElement button = buttons.get(0);
 
-        for (WebElement button : buttons) {
+        try {
+
+            // -------------------------------------------------
+            // Scroll button into view
+            // -------------------------------------------------
+
+            js.executeScript(
+                    "arguments[0].scrollIntoView({block:'center'});",
+                    button
+            );
+
+            Thread.sleep(300);
+
+            // -------------------------------------------------
+            // Click
+            // -------------------------------------------------
 
             try {
 
-                js.executeScript(
-                        "arguments[0].scrollIntoView({block:'center'});",
-                        button
-                );
-
-                try {
-                    button.click();
-                } catch (Exception e) {
-                    js.executeScript(
-                            "arguments[0].click();",
-                            button
-                    );
-                }
-
-                removedCount++;
-                removed = true;
-
-                Thread.sleep(500);
-
-                break;
-
-            } catch (StaleElementReferenceException e) {
-                // DOM changed, find the button again
-                break;
+                button.click();
 
             } catch (Exception e) {
+
                 System.out.println(
-                        "⚠ Could not remove one priority game."
+                        "Normal click failed. Using JavaScript click..."
                 );
+
+                js.executeScript(
+                        "arguments[0].click();",
+                        button
+                );
+            }
+
+            removedCount++;
+
+            System.out.println(
+                    "Removed Priority Game #"
+                            + removedCount
+            );
+
+            /*
+             * Give Vue time to move the game from:
+             *
+             * RIGHT SIDE
+             *      ↓
+             * LEFT SIDE
+             */
+
+            Thread.sleep(800);
+
+        } catch (StaleElementReferenceException e) {
+
+          
+
+            System.out.println(
+                    "DOM changed. Re-finding Priority button..."
+            );
+
+        } catch (Exception e) {
+
+            System.out.println(
+                    "Error clicking Priority button: "
+                            + e.getMessage()
+            );
+
+            // -------------------------------------------------
+            // Retry using a freshly located button
+            // -------------------------------------------------
+
+            try {
+
+                List<WebElement> retryButtons =
+                        driver.findElements(priorityButtonLocator);
+
+                if (!retryButtons.isEmpty()) {
+
+                    WebElement retryButton =
+                            retryButtons.get(0);
+
+                    js.executeScript(
+                            "arguments[0].scrollIntoView({block:'center'});",
+                            retryButton
+                    );
+
+                    Thread.sleep(300);
+
+                    js.executeScript(
+                            "arguments[0].click();",
+                            retryButton
+                    );
+
+                    removedCount++;
+
+                    System.out.println(
+                            "Removed Priority Game #"
+                                    + removedCount
+                                    + " using JavaScript"
+                    );
+
+                    Thread.sleep(800);
+
+                } else {
+
+                    System.out.println(
+                            "No Priority button available during retry."
+                    );
+
+                    break;
+                }
+
+            } catch (Exception retryException) {
+
+                System.out.println(
+                        "Retry also failed: "
+                                + retryException.getMessage()
+                );
+
+                break;
             }
         }
 
-        if (!removed) {
+        // =====================================================
+        // SAFETY LIMIT
+        // =====================================================
+
+        /*
+         * Prevent an infinite loop in case the website keeps
+         * returning the same button.
+         */
+
+        if (removedCount >= 1000) {
+
+            System.out.println(
+                    "Safety limit reached. Stopping."
+            );
+
             break;
         }
     }
 
+    // =========================================================
+    // FINAL CHECK
+    // =========================================================
+
+    Thread.sleep(1000);
+
+    List<WebElement> remaining =
+            driver.findElements(priorityButtonLocator);
+
+    System.out.println("======================================");
+
     System.out.println(
-            "✅ Priority Game list cleared. Removed: "
-                    + removedCount + " game(s)"
+            "Priority Game clearing completed."
+    );
+
+    System.out.println(
+            "Total games removed: "
+                    + removedCount
+    );
+
+    System.out.println(
+            "Priority buttons remaining: "
+                    + remaining.size()
     );
 
     System.out.println("======================================");
 }
-
     // ============================================================
     // MAIN
-    // ============================================================
+    // ==========================================================
     public static void main(String[] args) throws Exception {
 
         // ========================================================
@@ -383,7 +516,7 @@ public class HotGames {
         WebDriver driver = new ChromeDriver();
 
         driver.manage().timeouts().implicitlyWait(
-                Duration.ofSeconds(5)
+                Duration.ofSeconds(1)
         );
 
         WebDriverWait wait =
@@ -454,7 +587,7 @@ public class HotGames {
             // ====================================================
             wait.until(
                     ExpectedConditions.elementToBeClickable(
-                            By.xpath("//button[text()='THB']")
+                            By.xpath("//button[text()='BDT']")
                     )
             ).click();
 
@@ -463,14 +596,17 @@ public class HotGames {
             // ====================================================
             wait.until(
                     ExpectedConditions.elementToBeClickable(
-                            By.xpath("//button[text()='slot']")
+                            By.xpath("//button[text()='live']")
                     )
             ).click();
 
-            System.out.println("THB clicked successfully");
-           // clearPriorityGames(driver, wait);
+      System.out.println("AUD  clicked successfully");
 
-           Thread.sleep(40000);
+Thread.sleep(20000);
+
+//clearPriorityGames(driver, wait);
+
+//Thread.sleep(2000);
 
             // ====================================================
             // OPTIONAL PROVIDER SELECTION
