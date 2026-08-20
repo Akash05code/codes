@@ -8,7 +8,6 @@ import org.openqa.selenium.support.ui.*;
 
 public class Practice {
     public static void main(String[] args) throws InterruptedException {
-
         int startFromIndex = 1; //CHANGE THIS VALUE TO START FROM ANY CURRENCY INDEX 
         // THB=1 BDT=2 INR=3 PKR=4 SGD=5 AUD=6 HKD=7 MYR=8 NPR=9 PHP=10 MMK=11 IDR=12 USD=13 VND=14 LAK=15 TWD=16 PNG=17 
 
@@ -69,7 +68,7 @@ public class Practice {
 
             System.out.println("----- All merchants selected successfully.-----");
  
-            String desiredProvider = "9WICKETS [9WICKETS]"; //
+            String desiredProvider = "RSG-SLOT [RSG-SLOT]"; //
             WebElement providerDropdown = null;     
                                                 
                                                   
@@ -113,11 +112,11 @@ public class Practice {
 
             WebElement startDate = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("start_dateA")));
             startDate.clear();
-            startDate.sendKeys("2026-08-17 14:00:00");
+            startDate.sendKeys("2026-08-20 14:00:00");
 
             WebElement endDate = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("end_dateA")));
             endDate.clear();
-            endDate.sendKeys("2026-08-17 16:00:00");
+            endDate.sendKeys("");
 
         
             WebElement remark = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("remarkA")));
