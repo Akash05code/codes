@@ -16,37 +16,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class practice {
 
-    // =========================================================
-    // WAIT SETTINGS
-    // =========================================================
-
-    // Keep your normal wait smaller so a failed currency
-    // does not take 50 seconds unnecessarily.
+ 
     private static final int NORMAL_WAIT = 20;
-
-    // Modal close/backdrop wait.
     private static final int MODAL_WAIT = 8;
-
-    // Save/toast can take longer because backend processing
-    // may be delayed.
     private static final int SAVE_WAIT = 30;
 
-    // =========================================================
-    // MODAL LOCATORS
-    // =========================================================
-
-    /*
-     * Exact Cancel element from your modal HTML:
-     *
-     * <a href="javascript:void(0);"
-     *    class="btn btn-default mgr10"
-     *    data-dismiss="modal">
-     *    Cancel
-     * </a>
-     *
-     * We scope it to a visible Bootstrap modal so another
-     * Cancel button elsewhere does not get selected.
-     */
     private static final By MODAL_CANCEL =
             By.xpath(
                     "//div[contains(@class,'modal') and contains(@class,'in')]"
