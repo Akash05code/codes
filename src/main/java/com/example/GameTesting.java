@@ -19,17 +19,17 @@ public class GameTesting {
 
         driver.manage().window().maximize();
 
-        driver.get("https://member-npr96.ibstest.site/ne-np/slot");
+        driver.get("https://www.mero8np1.com/en-np/slot");
         Thread.sleep(20000);
 
         List<WebElement> providers = driver.findElements(
-                By.xpath("//div[contains(@class,'mt-5 flex items-center slot_btn_container w-full overflow-auto light-scrollbar-h pb-[10px]')]//button[@aria-label]")
+                By.xpath("//button[.//div[contains(@class,'provider_btn')] and .//div[contains(@class,'provider_text')]]")
         );
 
-        for (int p = 34; p < providers.size(); p++) {   //change the provider accordingly
+        for (int p = 28; p < providers.size(); p++) {   //change the provider accordingly
 
             providers = driver.findElements(
-                    By.xpath("//div[contains(@class,'mt-5 flex items-center slot_btn_container w-full overflow-auto light-scrollbar-h pb-[10px]')]//button[@aria-label]")
+                    By.xpath("//button[.//div[contains(@class,'provider_btn')] and .//div[contains(@class,'provider_text')]]")
             );
 
             WebElement provider = providers.get(p);
