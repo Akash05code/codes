@@ -26,39 +26,20 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class practice {
 
-    // =========================================================
-    // CONFIGURATION
-    // =========================================================
-
     private static final String EXCEL_PATH =
             "C:\\Users\\Akashkumar\\Desktop\\NotificationData.xlsx";
 
     private static final String APPLICATION_URL =
             "https://admin-centerbo.ibstest.site/system-notification";
 
-    /*
-     * Normal Selenium wait.
-     */
     private static final int NORMAL_WAIT = 20;
 
-    /*
-     * Modal close/open wait.
-     */
     private static final int MODAL_WAIT = 10;
 
-    /*
-     * AJAX loader wait.
-     */
     private static final int AJAX_WAIT = 15;
 
-    /*
-     * Save / toast wait.
-     */
     private static final int SAVE_WAIT = 30;
-
-    /*
-     * Start currency index.
-     *
+/*
      * THB = 1
      * BDT = 2
      * INR = 3
@@ -79,15 +60,8 @@ public class practice {
      */
     private static final int START_FROM_INDEX = 1;
 
-    /*
-     * Result sheet inside the same Excel file.
-     */
     private static final String RESULT_SHEET =
             "ExecutionResults";
-
-    // =========================================================
-    // EXACT MODAL
-    // =========================================================
 
     private static final By ADD_MAINTENANCE_MODAL =
             By.id("addMaintenance");
@@ -116,14 +90,6 @@ public class practice {
                     ".modal-backdrop"
             );
 
-    /*
-     * Actual Cancel element from your supplied modal:
-     *
-     * <a ... class="btn btn-default mgr10"
-     *    data-dismiss="modal">
-     *    Cancel
-     * </a>
-     */
     private static final By MODAL_CANCEL =
             By.xpath(
                     "//div[@id='addMaintenance']"
@@ -153,10 +119,6 @@ public class practice {
                         + notificationList.size()
         );
 
-        // =====================================================
-        // START DRIVER
-        // =====================================================
-
         WebDriver driver =
                 new ChromeDriver();
 
@@ -181,26 +143,14 @@ public class practice {
 
         try {
 
-            // =================================================
-            // OPEN APPLICATION
-            // =================================================
-
             driver.get(
                     APPLICATION_URL
             );
-
-            // =================================================
-            // LOGIN
-            // =================================================
 
             login(
                     driver,
                     wait
             );
-
-            // =================================================
-            // OPEN SYSTEM NOTIFICATION
-            // =================================================
 
             openSystemNotification(
                     driver,
@@ -220,9 +170,6 @@ public class practice {
                                 data.getProvider()
                         );
 
-                /*
-                 * Ignore blank Excel rows.
-                 */
                 if (desiredProvider.isEmpty()) {
 
                     System.out.println(
@@ -250,12 +197,6 @@ public class practice {
                         safeTrim(
                                 data.getRemark()
                         );
-
-                /*
-                 * Failed currencies for THIS provider.
-                 *
-                 * Currency -> Failure reason
-                 */
                 Map<String, String>
                         failedCurrencies =
                         new LinkedHashMap<>();
@@ -293,9 +234,6 @@ public class practice {
                         "##############################################"
                 );
 
-                // =================================================
-                // OPEN A FRESH MODAL
-                // =================================================
 
                 if (!clickAddNotification(
                         driver,
@@ -314,10 +252,6 @@ public class practice {
 
                     continue;
                 }
-
-                // =================================================
-                // GET CURRENCIES FROM FRESH MODAL
-                // =================================================
 
                 List<String> currencyNames =
                         getCurrencyNames(
@@ -344,10 +278,6 @@ public class practice {
                         "Currencies available: "
                                 + currencyNames
                 );
-
-                // =================================================
-                // NORMAL CURRENCY LOOP
-                // =================================================
 
                 for (int i =
                         START_FROM_INDEX;
@@ -384,9 +314,6 @@ public class practice {
 
                     try {
 
-                        // =========================================
-                        // 1. SELECT CURRENCY FROM FRESH MODAL
-                        // =========================================
 
                         boolean currencySelected =
                                 selectCurrency(
@@ -417,10 +344,6 @@ public class practice {
                             continue;
                         }
 
-                        // =========================================
-                        // 2. SELECT ALL FRESH MERCHANTS
-                        // =========================================
-
                         boolean merchantsSelected =
                                 selectAllMerchants(
                                         driver,
@@ -450,9 +373,6 @@ public class practice {
                             continue;
                         }
 
-                        // =========================================
-                        // 3. SELECT PROVIDER
-                        // =========================================
 
                         boolean providerSelected =
                                 selectProvider(
@@ -483,9 +403,6 @@ public class practice {
                             continue;
                         }
 
-                        // =========================================
-                        // 4. START DATE
-                        // =========================================
 
                         boolean startDateOK =
                                 enterAndVerify(
@@ -522,10 +439,6 @@ public class practice {
                                 "Start date validation PASS"
                         );
 
-                        // =========================================
-                        // 5. END DATE
-                        // =========================================
-
                         boolean endDateOK =
                                 enterAndVerify(
                                         driver,
@@ -561,9 +474,6 @@ public class practice {
                                 "End date validation PASS"
                         );
 
-                        // =========================================
-                        // 6. REMARK
-                        // =========================================
 
                         boolean remarkOK =
                                 enterAndVerify(
@@ -599,10 +509,6 @@ public class practice {
                         System.out.println(
                                 "Remark validation PASS"
                         );
-
-                        // =========================================
-                        // 7. FINAL VALIDATION
-                        // =========================================
 
                         System.out.println();
                         System.out.println(
@@ -676,10 +582,6 @@ public class practice {
                                 "ALL VALIDATIONS PASSED"
                         );
 
-                        // =========================================
-                        // 8. AJAX BEFORE SAVE
-                        // =========================================
-
                         System.out.println(
                                 "Waiting for AJAX processing..."
                         );
@@ -711,10 +613,6 @@ public class practice {
                                 "AJAX processing completed."
                         );
 
-                        // =========================================
-                        // 9. SAVE
-                        // =========================================
-
                         WebElement saveButton =
                                 wait.until(
                                         ExpectedConditions
@@ -730,10 +628,6 @@ public class practice {
                                 saveButton
                         );
 
-                        /*
-                         * One final loader check immediately before
-                         * Save.
-                         */
                         if (!waitForAjaxLoaderToFinish(
                                 driver
                         )) {
@@ -767,10 +661,6 @@ public class practice {
                                 "Save button clicked."
                         );
 
-                        // =========================================
-                        // 10. SAVE RESULT
-                        // =========================================
-
                         SaveResult result =
                                 waitForSaveResult(
                                         driver,
@@ -795,12 +685,6 @@ public class practice {
                                 result.status
                         )) {
 
-                            /*
-                             * Do NOT automatically retry a missing
-                             * toast because you already observed that
-                             * a notification may be saved even when
-                             * the toast is delayed.
-                             */
                             writeExecutionResult(
                                     EXCEL_PATH,
                                     desiredProvider,
@@ -821,19 +705,12 @@ public class practice {
                             );
                         }
 
-                        // =========================================
-                        // 11. CLOSE THIS MODAL
-                        // =========================================
 
                         closeModalUsingCancel(
                                 driver,
                                 wait,
                                 js
                         );
-
-                        // =========================================
-                        // 12. OPEN NEXT FRESH MODAL ONLY IF NEEDED
-                        // =========================================
 
                         if (i <
                                 currencyNames.size()) {
@@ -916,9 +793,6 @@ public class practice {
                     }
                 }
 
-                // =================================================
-                // NORMAL CURRENCIES FINISHED
-                // =================================================
 
                 System.out.println();
                 System.out.println(
@@ -961,10 +835,6 @@ public class practice {
                         "=============================================="
                 );
 
-                // =================================================
-                // RETRY FAILED CURRENCIES
-                // =================================================
-
                 if (!failedCurrencies.isEmpty()) {
 
                     retryFailedCurrencies(
@@ -978,10 +848,6 @@ public class practice {
                             failedCurrencies
                     );
                 }
-
-                // =================================================
-                // PROVIDER COMPLETED
-                // =================================================
 
                 System.out.println();
                 System.out.println(
@@ -1002,10 +868,6 @@ public class practice {
                 );
             }
 
-            // =====================================================
-            // ALL PROVIDERS COMPLETED
-            // =====================================================
-
             System.out.println();
             System.out.println(
                     "=============================================="
@@ -1024,10 +886,6 @@ public class practice {
             driver.quit();
         }
     }
-
-    // =========================================================
-    // LOGIN
-    // =========================================================
 
     private static void login(
             WebDriver driver,
@@ -1085,9 +943,6 @@ public class practice {
         );
     }
 
-    // =========================================================
-    // OPEN SYSTEM NOTIFICATION
-    // =========================================================
 
     private static void openSystemNotification(
             WebDriver driver,
@@ -1126,9 +981,6 @@ public class practice {
         );
     }
 
-    // =========================================================
-    // OPEN FRESH ADD NOTIFICATION MODAL
-    // =========================================================
 
     private static boolean clickAddNotification(
             WebDriver driver,
@@ -1137,17 +989,10 @@ public class practice {
 
         try {
 
-            // =====================================================
-            // 1. MAKE SURE OLD MODAL IS COMPLETELY CLOSED
-            // =====================================================
 
             waitForModalCompletelyClosed(
                     driver
             );
-
-            // =====================================================
-            // 2. FIND ADD BUTTON
-            // =====================================================
 
             WebElement addButton =
                     wait.until(
@@ -1162,9 +1007,6 @@ public class practice {
                     addButton
             );
 
-            // =====================================================
-            // 3. CLICK ADD BUTTON
-            // =====================================================
 
             try {
 
@@ -1199,9 +1041,6 @@ public class practice {
                 );
             }
 
-            // =====================================================
-            // 4. WAIT FOR THE ACTUAL NEW MODAL
-            // =====================================================
 
             wait.until(
                     ExpectedConditions
@@ -1210,9 +1049,6 @@ public class practice {
                             )
             );
 
-            // =====================================================
-            // 5. WAIT FOR FRESH CURRENCY DROPDOWN
-            // =====================================================
 
             wait.until(
                     ExpectedConditions
@@ -1220,10 +1056,6 @@ public class practice {
                                     CURRENCY_DROPDOWN
                             )
             );
-
-            // =====================================================
-            // 6. VERIFY NEW MODAL IS RESET
-            // =====================================================
 
             wait.until(driver1 -> {
 
@@ -1275,9 +1107,7 @@ public class practice {
         }
     }
 
-    // =========================================================
-    // WAIT UNTIL ACTUAL MODAL + BACKDROP ARE CLOSED
-    // =========================================================
+    
 
     private static void waitForModalCompletelyClosed(
             WebDriver driver) {
@@ -1301,11 +1131,6 @@ public class practice {
 
         } catch (TimeoutException e) {
 
-            /*
-             * Do not silently continue as if the modal is closed.
-             * The caller will still try the Add button only after
-             * this wait.
-             */
             System.out.println(
                     "Add Maintenance modal did not disappear "
                   + "within "
@@ -1343,9 +1168,6 @@ public class practice {
         sleep(300);
     }
 
-    // =========================================================
-    // CLOSE CURRENT MODAL USING REAL CANCEL
-    // =========================================================
 
     private static void closeModalUsingCancel(
             WebDriver driver,
@@ -1420,9 +1242,6 @@ public class practice {
         }
     }
 
-    // =========================================================
-    // GET CURRENCIES
-    // =========================================================
 
     private static List<String> getCurrencyNames(
             WebDriver driver,
@@ -1477,10 +1296,6 @@ public class practice {
         return currencies;
     }
 
-    // =========================================================
-    // SELECT CURRENCY FROM FRESH MODAL
-    // =========================================================
-
     private static boolean selectCurrency(
             WebDriver driver,
             WebDriverWait wait,
@@ -1489,9 +1304,6 @@ public class practice {
 
         try {
 
-            /*
-             * Always locate the current modal's currency dropdown.
-             */
             WebElement currencyDropdown =
                     wait.until(
                             ExpectedConditions
@@ -1551,10 +1363,6 @@ public class practice {
                     "Currency validation PASS"
             );
 
-            /*
-             * Currency change can trigger AJAX.
-             * Do NOT move to merchants until it finishes.
-             */
             if (!waitForAjaxLoaderToFinish(
                     driver
             )) {
@@ -1583,10 +1391,6 @@ public class practice {
         }
     }
 
-    // =========================================================
-    // SELECT ALL MERCHANTS FROM FRESH MODAL
-    // =========================================================
-
     private static boolean selectAllMerchants(
             WebDriver driver,
             WebDriverWait wait,
@@ -1599,11 +1403,6 @@ public class practice {
                     "Waiting for merchants to load for "
                             + currencyName
             );
-
-            /*
-             * merchantList is Select2-hidden-accessible in your
-             * supplied HTML, so we use PRESENCE, not visibility.
-             */
             wait.until(
                     ExpectedConditions
                             .presenceOfElementLocated(
@@ -1611,9 +1410,6 @@ public class practice {
                             )
             );
 
-            /*
-             * Wait until merchant OPTIONS are populated.
-             */
             wait.until(driver1 -> {
 
                 try {
@@ -1642,10 +1438,6 @@ public class practice {
                 }
             });
 
-            /*
-             * IMPORTANT:
-             * Re-find after AJAX.
-             */
             WebElement merchant =
                     driver.findElement(
                             MERCHANT_DROPDOWN
@@ -1670,10 +1462,6 @@ public class practice {
 
                 return false;
             }
-
-            // =====================================================
-            // CLEAR PREVIOUS SELECTIONS
-            // =====================================================
 
             js.executeScript(
                     """
@@ -1702,18 +1490,12 @@ public class practice {
 
             sleep(300);
 
-            // =====================================================
-            // RE-FIND AGAIN
-            // =====================================================
 
             merchant =
                     driver.findElement(
                             MERCHANT_DROPDOWN
                     );
 
-            // =====================================================
-            // SELECT ALL
-            // =====================================================
 
             js.executeScript(
                     """
@@ -1740,9 +1522,6 @@ public class practice {
                     merchant
             );
 
-            // =====================================================
-            // VERIFY ALL MERCHANTS
-            // =====================================================
 
             wait.until(driver1 -> {
 
@@ -1799,9 +1578,6 @@ public class practice {
                             + currencyName
             );
 
-            /*
-             * Merchant selection can trigger AJAX.
-             */
             if (!waitForAjaxLoaderToFinish(
                     driver
             )) {
@@ -1839,9 +1615,6 @@ public class practice {
         }
     }
 
-    // =========================================================
-    // SELECT PROVIDER
-    // =========================================================
 
     private static boolean selectProvider(
             WebDriver driver,
@@ -1855,9 +1628,6 @@ public class practice {
 
             try {
 
-                /*
-                 * Wait until provider options exist.
-                 */
                 wait.until(driver1 -> {
 
                     try {
@@ -1882,9 +1652,6 @@ public class practice {
                     }
                 });
 
-                /*
-                 * Re-find fresh provider dropdown.
-                 */
                 WebElement providerDropdown =
                         wait.until(
                                 ExpectedConditions
@@ -1931,9 +1698,6 @@ public class practice {
                                 desiredProvider
                         );
 
-                /*
-                 * Verify provider selection.
-                 */
                 wait.until(driver1 -> {
 
                     try {
@@ -1999,11 +1763,6 @@ public class practice {
 
         return false;
     }
-
-    // =========================================================
-    // ENTER + VERIFY TEXT
-    // =========================================================
-
     private static boolean enterAndVerify(
             WebDriver driver,
             WebDriverWait wait,
@@ -2043,10 +1802,6 @@ public class practice {
         }
     }
 
-    // =========================================================
-    // AJAX LOADER
-    // =========================================================
-
     private static boolean waitForAjaxLoaderToFinish(
             WebDriver driver) {
 
@@ -2082,11 +1837,6 @@ public class practice {
             return false;
         }
     }
-
-    // =========================================================
-    // SAVE RESULT
-    // =========================================================
-
     private static SaveResult waitForSaveResult(
             WebDriver driver,
             String provider,
@@ -2183,10 +1933,6 @@ public class practice {
         }
     }
 
-    // =========================================================
-    // MOVE TO NEXT CURRENCY
-    // =========================================================
-
     private static void moveToNextCurrency(
             WebDriver driver,
             WebDriverWait wait,
@@ -2194,18 +1940,12 @@ public class practice {
             int currentIndex,
             int totalCurrencies) {
 
-        /*
-         * Always close current modal first.
-         */
         closeModalUsingCancel(
                 driver,
                 wait,
                 js
         );
 
-        /*
-         * Only open a new modal when another currency exists.
-         */
         if (currentIndex <
                 totalCurrencies) {
 
@@ -2225,10 +1965,6 @@ public class practice {
             }
         }
     }
-
-    // =========================================================
-    // RETRY FAILED CURRENCIES
-    // =========================================================
 
     private static void retryFailedCurrencies(
             WebDriver driver,
@@ -2296,10 +2032,6 @@ public class practice {
                     "----------------------------------------------"
             );
 
-            // =================================================
-            // OPEN FRESH MODAL
-            // =================================================
-
             if (!clickAddNotification(
                     driver,
                     wait,
@@ -2351,10 +2083,6 @@ public class practice {
                     continue;
                 }
 
-                // =============================================
-                // SELECT FAILED CURRENCY
-                // =============================================
-
                 if (!selectCurrency(
                         driver,
                         wait,
@@ -2380,9 +2108,6 @@ public class practice {
                     continue;
                 }
 
-                // =============================================
-                // MERCHANTS
-                // =============================================
 
                 if (!selectAllMerchants(
                         driver,
@@ -2409,9 +2134,6 @@ public class practice {
                     continue;
                 }
 
-                // =============================================
-                // PROVIDER
-                // =============================================
 
                 if (!selectProvider(
                         driver,
@@ -2438,9 +2160,6 @@ public class practice {
                     continue;
                 }
 
-                // =============================================
-                // START DATE
-                // =============================================
 
                 if (!enterAndVerify(
                         driver,
@@ -2467,10 +2186,6 @@ public class practice {
                     continue;
                 }
 
-                // =============================================
-                // END DATE
-                // =============================================
-
                 if (!enterAndVerify(
                         driver,
                         wait,
@@ -2496,9 +2211,6 @@ public class practice {
                     continue;
                 }
 
-                // =============================================
-                // REMARK
-                // =============================================
 
                 if (!enterAndVerify(
                         driver,
@@ -2524,10 +2236,6 @@ public class practice {
 
                     continue;
                 }
-
-                // =============================================
-                // FINAL VALIDATION
-                // =============================================
 
                 boolean retryValidation =
                         NotificationValidator.verifyAll(
@@ -2558,10 +2266,6 @@ public class practice {
                     continue;
                 }
 
-                // =============================================
-                // AJAX BEFORE RETRY SAVE
-                // =============================================
-
                 if (!waitForAjaxLoaderToFinish(
                         driver
                 )) {
@@ -2584,10 +2288,6 @@ public class practice {
                     continue;
                 }
 
-                // =============================================
-                // RETRY SAVE
-                // =============================================
-
                 WebElement retrySave =
                         wait.until(
                                 ExpectedConditions
@@ -2603,10 +2303,6 @@ public class practice {
                 System.out.println(
                         "Retry Save clicked."
                 );
-
-                // =============================================
-                // RETRY RESULT
-                // =============================================
 
                 SaveResult retryResult =
                         waitForSaveResult(
@@ -2687,9 +2383,6 @@ public class practice {
         }
     }
 
-    // =========================================================
-    // FIND CURRENCY INDEX IN CURRENT FRESH MODAL
-    // =========================================================
 
     private static int findCurrencyIndex(
             WebDriver driver,
@@ -2742,10 +2435,6 @@ public class practice {
         return -1;
     }
 
-    // =========================================================
-    // RECORD FAILURE
-    // =========================================================
-
     private static void recordFailure(
             Map<String, String> failedCurrencies,
             String excelPath,
@@ -2781,10 +2470,6 @@ public class practice {
                         + reason
         );
     }
-
-    // =========================================================
-    // WRITE EXECUTION RESULT
-    // =========================================================
 
     private static synchronized void
             writeExecutionResult(
@@ -2911,10 +2596,6 @@ public class practice {
         }
     }
 
-    // =========================================================
-    // SAFE STRING
-    // =========================================================
-
     private static String safeTrim(
             String value) {
 
@@ -2926,9 +2607,6 @@ public class practice {
         return value.trim();
     }
 
-    // =========================================================
-    // SAFE SLEEP
-    // =========================================================
 
     private static void sleep(
             long milliseconds) {
@@ -2950,9 +2628,6 @@ public class practice {
         }
     }
 
-    // =========================================================
-    // SAVE RESULT CLASS
-    // =========================================================
 
     private static class SaveResult {
 
