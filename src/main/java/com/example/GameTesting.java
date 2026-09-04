@@ -19,17 +19,17 @@ public class GameTesting {
 
         driver.manage().window().maximize();
 
-        driver.get("https://www.rachan789v1.com/en-th");
+        driver.get("https://www.kismat33.net/en-np/slot");
         Thread.sleep(20000);
 
         List<WebElement> providers = driver.findElements(
-                By.xpath("//div[contains(@class,'mt-5 flex items-center slot_btn_container w-full overflow-auto light-scrollbar-h pb-[10px]')]//button[@aria-label]")
+               By.xpath("//button[.//div[contains(@class,'tab_btn_bg')] and .//div[contains(@class,'tab_btn_text')]]")
         );
 
         for (int p = 1; p < providers.size(); p++) {   //change the provider accordingly
 
             providers = driver.findElements(
-                    By.xpath("//div[contains(@class,'mt-5 flex items-center slot_btn_container w-full overflow-auto light-scrollbar-h pb-[10px]')]//button[@aria-label]")
+                   By.xpath("//button[.//div[contains(@class,'tab_btn_bg')] and .//div[contains(@class,'tab_btn_text')]]")
             );
 
             WebElement provider = providers.get(p);
@@ -50,7 +50,7 @@ public class GameTesting {
                     By.xpath("//button[@aria-label='Play Now']")
             );
 
-            int count = Math.min(2, playBtns.size());   //change the number of games to be checked...
+            int count = Math.min(3, playBtns.size());   //change the number of games to be checked...
 
             for (int i = 0; i < count; i++) {
 

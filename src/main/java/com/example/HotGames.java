@@ -149,19 +149,19 @@ public class HotGames {
                     By.xpath("//div[text()='Admin Game Settings']"))).click();
 
             wait.until(ExpectedConditions.elementToBeClickable(
-                    By.xpath("//a[text()='All Game']"))).click(); //HOT or ALL GAMES need to be selected
+                    By.xpath("//a[text()='Provider Game Sequence']"))).click(); //HOT or ALL GAMES need to be selected
                      wait.until(ExpectedConditions.elementToBeClickable(
-                    By.xpath("//button[text()='VND']"))).click();           //Category selection
+                    By.xpath("//button[text()='MYR']"))).click();           //Category selection
 
             wait.until(ExpectedConditions.elementToBeClickable(
-                    By.xpath("//button[text()='live']"))).click(); //Currency selection   HKD, LAK, PNG
+                    By.xpath("//button[text()='instantwin']"))).click(); //Currency selection   HKD, LAK, PNG
 
-            System.out.println("VND clicked successfully");
+            System.out.println("MYR clicked successfully");
             Thread.sleep(20000);
 
            
-         //   String providerName = "POP";   // Provider selection
-          //  selectProviderFromDropdown(driver, wait, providerName);
+           String providerName = "SPB";   // Provider selection
+           selectProviderFromDropdown(driver, wait, providerName);
 
             // Search box
             WebElement searchBox = wait.until(ExpectedConditions.visibilityOfElementLocated(
