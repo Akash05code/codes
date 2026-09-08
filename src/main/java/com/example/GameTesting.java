@@ -19,7 +19,7 @@ public class GameTesting {
 
         driver.manage().window().maximize();
 
-        driver.get("https://www.kismat33.net/en-np/slot");
+        driver.get("https://www.doosra99.com/en-lk");
         Thread.sleep(20000);
 
         List<WebElement> providers = driver.findElements(

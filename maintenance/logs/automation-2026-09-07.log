@@ -1,0 +1,5424 @@
+========================================== 
+Automation Started: Mon 09/07/2026 11:42:52.59 
+Project Directory: C:\Users\Akashkumar\Desktop\vs code\.vscode\selenium\maintenance 
+========================================== 
+ 
+[1] Java Version 
+java version "21.0.9" 2025-10-21 LTS
+Java(TM) SE Runtime Environment (build 21.0.9+7-LTS-338)
+Java HotSpot(TM) 64-Bit Server VM (build 21.0.9+7-LTS-338, mixed mode, sharing)
+ 
+[2] Maven Version 
+Apache Maven 3.9.12 (848fbb4bf2d427b72bdb2471c22fced7ebd9a7a1)
+Maven home: C:\Tools\apache-maven\apache-maven-3.9.12
+Java version: 21.0.9, vendor: Oracle Corporation, runtime: C:\Program Files\Java\jdk-21
+Default locale: en_US, platform encoding: UTF-8
+OS name: "windows 11", version: "10.0", arch: "amd64", family: "windows"
+ 
+[3] Maven Clean Compile 
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< com.example:selenium >------------------------
+[INFO] Building selenium 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ selenium ---
+[INFO] Deleting C:\Users\Akashkumar\Desktop\vs code\.vscode\selenium\maintenance\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ selenium ---
+[INFO] skip non existing resourceDirectory C:\Users\Akashkumar\Desktop\vs code\.vscode\selenium\maintenance\src\main\resources
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ selenium ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 7 source files with javac [debug target 21] to target\classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.440 s
+[INFO] Finished at: 2026-09-07T11:42:57+05:30
+[INFO] ------------------------------------------------------------------------
+Compile Exit Code: 0 
+ 
+[4] Starting Selenium Automation 
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< com.example:selenium >------------------------
+[INFO] Building selenium 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec:3.5.0:java (default-cli) @ selenium ---
+ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+Total Rows : 8
+Sep 07, 2026 11:43:03 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 152
+Sep 07, 2026 11:43:03 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 152.0.7977.76. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[WARNING] 
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a id="btn..." href="javascript:void(0);" class="btn btn-primary btn-block">Login</a> is not clickable at point (510, 481). Other element would receive the click: <html data-theme="light" style="height: auto; min-height: 100%;">...</html>
+  (Session info: chrome=152.0.7977.76)
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d370497455bb9f65f3660dc484b17c3f, clickElement {id=f.A85908CA031A8C26D83BB138698AEBD8.d.1DEF46447D13B58FA5CA88726EFE0E0C.e.23}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.76, chrome: {chromedriverVersion: 152.0.7977.82 (d04cdb24d67b..., userDataDir: C:\Users\AKASHK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58612}, goog:processID: 11144, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58612/devtoo..., se:cdpVersion: 152.0.7977.76, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d370497455bb9f65f3660dc484b17c3f)] -> id: btnLogin]
+Session ID: d370497455bb9f65f3660dc484b17c3f
+    at jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance (DirectConstructorHandleAccessor.java:62)
+    at java.lang.reflect.Constructor.newInstanceWithCaller (Constructor.java:502)
+    at java.lang.reflect.Constructor.newInstance (Constructor.java:486)
+    at org.openqa.selenium.remote.ErrorCodec.decode (ErrorCodec.java:167)
+    at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode (W3CHttpResponseCodec.java:138)
+    at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode (W3CHttpResponseCodec.java:50)
+    at org.openqa.selenium.remote.HttpCommandExecutor.execute (HttpCommandExecutor.java:215)
+    at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute (DriverCommandExecutor.java:216)
+    at org.openqa.selenium.remote.service.DriverCommandExecutor.execute (DriverCommandExecutor.java:174)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute (RemoteWebDriver.java:544)
+    at org.openqa.selenium.remote.RemoteWebElement.execute (RemoteWebElement.java:223)
+    at org.openqa.selenium.remote.RemoteWebElement.click (RemoteWebElement.java:76)
+    at com.framework.practice.login (practice.java:930)
+    at com.framework.practice.main (practice.java:150)
+    at org.codehaus.mojo.exec.ExecJavaMojo.doMain (ExecJavaMojo.java:375)
+    at org.codehaus.mojo.exec.ExecJavaMojo.doExec (ExecJavaMojo.java:364)
+    at org.codehaus.mojo.exec.ExecJavaMojo.lambda$execute$0 (ExecJavaMojo.java:286)
+    at java.lang.Thread.run (Thread.java:1583)
+[WARNING] thread Thread[#45,UrlChecker-2,5,com.framework.practice] was interrupted but is still alive after waiting at least 15000msecs
+[WARNING] thread Thread[#45,UrlChecker-2,5,com.framework.practice] will linger despite being asked to die via interruption
+[WARNING] thread Thread[#48,CompletableFutureDelayScheduler,5,com.framework.practice] will linger despite being asked to die via interruption
+[WARNING] NOTE: 2 thread(s) did not finish despite being asked to via interruption. This is not a problem with exec:java, it is a problem with the running code. Although not serious, it should be remedied.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  23.293 s
+[INFO] Finished at: 2026-09-07T11:43:22+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.codehaus.mojo:exec-maven-plugin:3.5.0:java (default-cli) on project selenium: An exception occurred while executing the Java class. element click intercepted: Element <a id="btn..." href="javascript:void(0);" class="btn btn-primary btn-block">Login</a> is not clickable at point (510, 481). Other element would receive the click: <html data-theme="light" style="height: auto; min-height: 100%;">...</html>
+[ERROR]   (Session info: chrome=152.0.7977.76)
+[ERROR] Build info: version: '4.34.0', revision: '707dcb4246*'
+[ERROR] System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+[ERROR] Driver info: org.openqa.selenium.chrome.ChromeDriver
+[ERROR] Command: [d370497455bb9f65f3660dc484b17c3f, clickElement {id=f.A85908CA031A8C26D83BB138698AEBD8.d.1DEF46447D13B58FA5CA88726EFE0E0C.e.23}]
+[ERROR] Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.76, chrome: {chromedriverVersion: 152.0.7977.82 (d04cdb24d67b..., userDataDir: C:\Users\AKASHK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58612}, goog:processID: 11144, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58612/devtoo..., se:cdpVersion: 152.0.7977.76, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+[ERROR] Element: [[ChromeDriver: chrome on windows (d370497455bb9f65f3660dc484b17c3f)] -> id: btnLogin]
+[ERROR] Session ID: d370497455bb9f65f3660dc484b17c3f
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+ 
+Automation Exit Code: 1 
+Automation Finished: Mon 09/07/2026 11:43:22.36 
+========================================== 
+========================================== 
+Automation Started: Mon 09/07/2026 11:43:47.45 
+Project Directory: C:\Users\Akashkumar\Desktop\vs code\.vscode\selenium\maintenance 
+========================================== 
+ 
+[1] Java Version 
+java version "21.0.9" 2025-10-21 LTS
+Java(TM) SE Runtime Environment (build 21.0.9+7-LTS-338)
+Java HotSpot(TM) 64-Bit Server VM (build 21.0.9+7-LTS-338, mixed mode, sharing)
+ 
+[2] Maven Version 
+Apache Maven 3.9.12 (848fbb4bf2d427b72bdb2471c22fced7ebd9a7a1)
+Maven home: C:\Tools\apache-maven\apache-maven-3.9.12
+Java version: 21.0.9, vendor: Oracle Corporation, runtime: C:\Program Files\Java\jdk-21
+Default locale: en_US, platform encoding: UTF-8
+OS name: "windows 11", version: "10.0", arch: "amd64", family: "windows"
+ 
+[3] Maven Clean Compile 
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< com.example:selenium >------------------------
+[INFO] Building selenium 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ selenium ---
+[INFO] Deleting C:\Users\Akashkumar\Desktop\vs code\.vscode\selenium\maintenance\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ selenium ---
+[INFO] skip non existing resourceDirectory C:\Users\Akashkumar\Desktop\vs code\.vscode\selenium\maintenance\src\main\resources
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ selenium ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 7 source files with javac [debug target 21] to target\classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.098 s
+[INFO] Finished at: 2026-09-07T11:43:51+05:30
+[INFO] ------------------------------------------------------------------------
+Compile Exit Code: 0 
+ 
+[4] Starting Selenium Automation 
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< com.example:selenium >------------------------
+[INFO] Building selenium 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec:3.5.0:java (default-cli) @ selenium ---
+ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+Total Rows : 8
+Sep 07, 2026 11:43:56 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 152
+Sep 07, 2026 11:43:56 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 152.0.7977.76. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Login successful.
+System Notification opened.
+
+##############################################
+STARTING PROVIDER
+Provider : BG-LIVE [BG-LIVE]
+Start    : 2026-09-08 04:00:00
+End      : 2026-09-08 05:00:00
+Remark   : Provider is on maintenance
+##############################################
+Fresh Add Notification modal opened.
+Currencies available: [THB, BDT, INR, PKR, SGD, AUD, HKD, MYR, NPR, PHP, MMK, IDR, USD, VND, LAK, TWD, PGK]
+
+==============================================
+Provider : BG-LIVE [BG-LIVE]
+Currency : THB
+Attempt  : 1
+==============================================
+Currency selected: THB
+Currency validation PASS
+Waiting for merchants to load for THB
+Merchant options found: 38
+Merchants selected: 38 / 38
+All merchants selected successfully for THB
+Provider selected successfully: BG-LIVE [BG-LIVE]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : BG-LIVE [BG-LIVE]
+Currency : THB
+Start    : 2026-09-08 04:00:00
+End      : 2026-09-08 05:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: BG-LIVE [BG-LIVE] | Actual: BG-LIVE [BG-LIVE] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 04:00:00 | Actual: 2026-09-08 04:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 05:00:00 | Actual: 2026-09-08 05:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : BG-LIVE [BG-LIVE]
+Currency : THB
+======================================
+RESULT WRITTEN: BG-LIVE [BG-LIVE] | THB | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : BG-LIVE [BG-LIVE]
+Currency : BDT
+Attempt  : 1
+==============================================
+Currency selected: BDT
+Currency validation PASS
+Waiting for merchants to load for BDT
+Merchant options found: 11
+Merchants selected: 11 / 11
+All merchants selected successfully for BDT
+Provider selected successfully: BG-LIVE [BG-LIVE]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : BG-LIVE [BG-LIVE]
+Currency : BDT
+Start    : 2026-09-08 04:00:00
+End      : 2026-09-08 05:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: BG-LIVE [BG-LIVE] | Actual: BG-LIVE [BG-LIVE] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 04:00:00 | Actual: 2026-09-08 04:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 05:00:00 | Actual: 2026-09-08 05:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : BG-LIVE [BG-LIVE]
+Currency : BDT
+======================================
+RESULT WRITTEN: BG-LIVE [BG-LIVE] | BDT | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : BG-LIVE [BG-LIVE]
+Currency : INR
+Attempt  : 1
+==============================================
+Currency selected: INR
+Currency validation PASS
+Waiting for merchants to load for INR
+Merchant options found: 5
+Merchants selected: 5 / 5
+All merchants selected successfully for INR
+Provider selected successfully: BG-LIVE [BG-LIVE]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : BG-LIVE [BG-LIVE]
+Currency : INR
+Start    : 2026-09-08 04:00:00
+End      : 2026-09-08 05:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: BG-LIVE [BG-LIVE] | Actual: BG-LIVE [BG-LIVE] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 04:00:00 | Actual: 2026-09-08 04:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 05:00:00 | Actual: 2026-09-08 05:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : BG-LIVE [BG-LIVE]
+Currency : INR
+======================================
+RESULT WRITTEN: BG-LIVE [BG-LIVE] | INR | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : BG-LIVE [BG-LIVE]
+Currency : PKR
+Attempt  : 1
+==============================================
+Currency selected: PKR
+Currency validation PASS
+Waiting for merchants to load for PKR
+Merchant options found: 4
+Merchants selected: 4 / 4
+All merchants selected successfully for PKR
+Provider selected successfully: BG-LIVE [BG-LIVE]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : BG-LIVE [BG-LIVE]
+Currency : PKR
+Start    : 2026-09-08 04:00:00
+End      : 2026-09-08 05:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: BG-LIVE [BG-LIVE] | Actual: BG-LIVE [BG-LIVE] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 04:00:00 | Actual: 2026-09-08 04:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 05:00:00 | Actual: 2026-09-08 05:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : BG-LIVE [BG-LIVE]
+Currency : PKR
+======================================
+RESULT WRITTEN: BG-LIVE [BG-LIVE] | PKR | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : BG-LIVE [BG-LIVE]
+Currency : SGD
+Attempt  : 1
+==============================================
+Currency selected: SGD
+Currency validation PASS
+Waiting for merchants to load for SGD
+Merchant options found: 9
+Merchants selected: 9 / 9
+All merchants selected successfully for SGD
+Provider selected successfully: BG-LIVE [BG-LIVE]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : BG-LIVE [BG-LIVE]
+Currency : SGD
+Start    : 2026-09-08 04:00:00
+End      : 2026-09-08 05:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: BG-LIVE [BG-LIVE] | Actual: BG-LIVE [BG-LIVE] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 04:00:00 | Actual: 2026-09-08 04:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 05:00:00 | Actual: 2026-09-08 05:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : BG-LIVE [BG-LIVE]
+Currency : SGD
+======================================
+RESULT WRITTEN: BG-LIVE [BG-LIVE] | SGD | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : BG-LIVE [BG-LIVE]
+Currency : AUD
+Attempt  : 1
+==============================================
+Currency selected: AUD
+Currency validation PASS
+Waiting for merchants to load for AUD
+Merchant options found: 25
+Merchants selected: 25 / 25
+All merchants selected successfully for AUD
+Provider selected successfully: BG-LIVE [BG-LIVE]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : BG-LIVE [BG-LIVE]
+Currency : AUD
+Start    : 2026-09-08 04:00:00
+End      : 2026-09-08 05:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: BG-LIVE [BG-LIVE] | Actual: BG-LIVE [BG-LIVE] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 04:00:00 | Actual: 2026-09-08 04:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 05:00:00 | Actual: 2026-09-08 05:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : BG-LIVE [BG-LIVE]
+Currency : AUD
+======================================
+RESULT WRITTEN: BG-LIVE [BG-LIVE] | AUD | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : BG-LIVE [BG-LIVE]
+Currency : HKD
+Attempt  : 1
+==============================================
+Currency selected: HKD
+Currency validation PASS
+Waiting for merchants to load for HKD
+Merchant options found: 3
+Merchants selected: 3 / 3
+All merchants selected successfully for HKD
+Provider selected successfully: BG-LIVE [BG-LIVE]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : BG-LIVE [BG-LIVE]
+Currency : HKD
+Start    : 2026-09-08 04:00:00
+End      : 2026-09-08 05:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: BG-LIVE [BG-LIVE] | Actual: BG-LIVE [BG-LIVE] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 04:00:00 | Actual: 2026-09-08 04:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 05:00:00 | Actual: 2026-09-08 05:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : BG-LIVE [BG-LIVE]
+Currency : HKD
+======================================
+RESULT WRITTEN: BG-LIVE [BG-LIVE] | HKD | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : BG-LIVE [BG-LIVE]
+Currency : MYR
+Attempt  : 1
+==============================================
+Currency selected: MYR
+Currency validation PASS
+Waiting for merchants to load for MYR
+Merchant options found: 22
+Merchants selected: 22 / 22
+All merchants selected successfully for MYR
+Provider selected successfully: BG-LIVE [BG-LIVE]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : BG-LIVE [BG-LIVE]
+Currency : MYR
+Start    : 2026-09-08 04:00:00
+End      : 2026-09-08 05:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: BG-LIVE [BG-LIVE] | Actual: BG-LIVE [BG-LIVE] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 04:00:00 | Actual: 2026-09-08 04:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 05:00:00 | Actual: 2026-09-08 05:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : BG-LIVE [BG-LIVE]
+Currency : MYR
+======================================
+RESULT WRITTEN: BG-LIVE [BG-LIVE] | MYR | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : BG-LIVE [BG-LIVE]
+Currency : NPR
+Attempt  : 1
+==============================================
+Currency selected: NPR
+Currency validation PASS
+Waiting for merchants to load for NPR
+Merchant options found: 32
+Merchants selected: 32 / 32
+All merchants selected successfully for NPR
+Provider selected successfully: BG-LIVE [BG-LIVE]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : BG-LIVE [BG-LIVE]
+Currency : NPR
+Start    : 2026-09-08 04:00:00
+End      : 2026-09-08 05:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: BG-LIVE [BG-LIVE] | Actual: BG-LIVE [BG-LIVE] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 04:00:00 | Actual: 2026-09-08 04:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 05:00:00 | Actual: 2026-09-08 05:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : BG-LIVE [BG-LIVE]
+Currency : NPR
+======================================
+RESULT WRITTEN: BG-LIVE [BG-LIVE] | NPR | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : BG-LIVE [BG-LIVE]
+Currency : PHP
+Attempt  : 1
+==============================================
+Currency selected: PHP
+Currency validation PASS
+Waiting for merchants to load for PHP
+Merchant options found: 13
+Merchants selected: 13 / 13
+All merchants selected successfully for PHP
+Provider selected successfully: BG-LIVE [BG-LIVE]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : BG-LIVE [BG-LIVE]
+Currency : PHP
+Start    : 2026-09-08 04:00:00
+End      : 2026-09-08 05:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: BG-LIVE [BG-LIVE] | Actual: BG-LIVE [BG-LIVE] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 04:00:00 | Actual: 2026-09-08 04:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 05:00:00 | Actual: 2026-09-08 05:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : BG-LIVE [BG-LIVE]
+Currency : PHP
+======================================
+RESULT WRITTEN: BG-LIVE [BG-LIVE] | PHP | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : BG-LIVE [BG-LIVE]
+Currency : MMK
+Attempt  : 1
+==============================================
+Currency selected: MMK
+Currency validation PASS
+Waiting for merchants to load for MMK
+Merchant options found: 2
+Merchants selected: 2 / 2
+All merchants selected successfully for MMK
+Provider selected successfully: BG-LIVE [BG-LIVE]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : BG-LIVE [BG-LIVE]
+Currency : MMK
+Start    : 2026-09-08 04:00:00
+End      : 2026-09-08 05:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: BG-LIVE [BG-LIVE] | Actual: BG-LIVE [BG-LIVE] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 04:00:00 | Actual: 2026-09-08 04:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 05:00:00 | Actual: 2026-09-08 05:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : BG-LIVE [BG-LIVE]
+Currency : MMK
+======================================
+RESULT WRITTEN: BG-LIVE [BG-LIVE] | MMK | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : BG-LIVE [BG-LIVE]
+Currency : IDR
+Attempt  : 1
+==============================================
+Currency selected: IDR
+Currency validation PASS
+Waiting for merchants to load for IDR
+Merchant options found: 4
+Merchants selected: 4 / 4
+All merchants selected successfully for IDR
+Provider selected successfully: BG-LIVE [BG-LIVE]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : BG-LIVE [BG-LIVE]
+Currency : IDR
+Start    : 2026-09-08 04:00:00
+End      : 2026-09-08 05:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: BG-LIVE [BG-LIVE] | Actual: BG-LIVE [BG-LIVE] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 04:00:00 | Actual: 2026-09-08 04:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 05:00:00 | Actual: 2026-09-08 05:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : BG-LIVE [BG-LIVE]
+Currency : IDR
+======================================
+RESULT WRITTEN: BG-LIVE [BG-LIVE] | IDR | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : BG-LIVE [BG-LIVE]
+Currency : USD
+Attempt  : 1
+==============================================
+Currency selected: USD
+Currency validation PASS
+Waiting for merchants to load for USD
+Merchant options found: 5
+Merchants selected: 5 / 5
+All merchants selected successfully for USD
+Provider selected successfully: BG-LIVE [BG-LIVE]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : BG-LIVE [BG-LIVE]
+Currency : USD
+Start    : 2026-09-08 04:00:00
+End      : 2026-09-08 05:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: BG-LIVE [BG-LIVE] | Actual: BG-LIVE [BG-LIVE] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 04:00:00 | Actual: 2026-09-08 04:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 05:00:00 | Actual: 2026-09-08 05:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : BG-LIVE [BG-LIVE]
+Currency : USD
+======================================
+RESULT WRITTEN: BG-LIVE [BG-LIVE] | USD | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : BG-LIVE [BG-LIVE]
+Currency : VND
+Attempt  : 1
+==============================================
+Currency selected: VND
+Currency validation PASS
+Waiting for merchants to load for VND
+Merchant options found: 3
+Merchants selected: 3 / 3
+All merchants selected successfully for VND
+Provider selected successfully: BG-LIVE [BG-LIVE]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : BG-LIVE [BG-LIVE]
+Currency : VND
+Start    : 2026-09-08 04:00:00
+End      : 2026-09-08 05:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: BG-LIVE [BG-LIVE] | Actual: BG-LIVE [BG-LIVE] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 04:00:00 | Actual: 2026-09-08 04:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 05:00:00 | Actual: 2026-09-08 05:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : BG-LIVE [BG-LIVE]
+Currency : VND
+======================================
+RESULT WRITTEN: BG-LIVE [BG-LIVE] | VND | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : BG-LIVE [BG-LIVE]
+Currency : LAK
+Attempt  : 1
+==============================================
+Currency selected: LAK
+Currency validation PASS
+Waiting for merchants to load for LAK
+Merchant options found: 2
+Merchants selected: 2 / 2
+All merchants selected successfully for LAK
+Provider selected successfully: BG-LIVE [BG-LIVE]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : BG-LIVE [BG-LIVE]
+Currency : LAK
+Start    : 2026-09-08 04:00:00
+End      : 2026-09-08 05:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: BG-LIVE [BG-LIVE] | Actual: BG-LIVE [BG-LIVE] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 04:00:00 | Actual: 2026-09-08 04:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 05:00:00 | Actual: 2026-09-08 05:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : BG-LIVE [BG-LIVE]
+Currency : LAK
+======================================
+RESULT WRITTEN: BG-LIVE [BG-LIVE] | LAK | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : BG-LIVE [BG-LIVE]
+Currency : TWD
+Attempt  : 1
+==============================================
+Currency selected: TWD
+Currency validation PASS
+Waiting for merchants to load for TWD
+Merchant options found: 2
+Merchants selected: 2 / 2
+All merchants selected successfully for TWD
+Provider selected successfully: BG-LIVE [BG-LIVE]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : BG-LIVE [BG-LIVE]
+Currency : TWD
+Start    : 2026-09-08 04:00:00
+End      : 2026-09-08 05:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: BG-LIVE [BG-LIVE] | Actual: BG-LIVE [BG-LIVE] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 04:00:00 | Actual: 2026-09-08 04:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 05:00:00 | Actual: 2026-09-08 05:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : BG-LIVE [BG-LIVE]
+Currency : TWD
+======================================
+RESULT WRITTEN: BG-LIVE [BG-LIVE] | TWD | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : BG-LIVE [BG-LIVE]
+Currency : PGK
+Attempt  : 1
+==============================================
+Currency selected: PGK
+Currency validation PASS
+Waiting for merchants to load for PGK
+Merchant options found: 3
+Merchants selected: 3 / 3
+All merchants selected successfully for PGK
+Provider selected successfully: BG-LIVE [BG-LIVE]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : BG-LIVE [BG-LIVE]
+Currency : PGK
+Start    : 2026-09-08 04:00:00
+End      : 2026-09-08 05:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: BG-LIVE [BG-LIVE] | Actual: BG-LIVE [BG-LIVE] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 04:00:00 | Actual: 2026-09-08 04:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 05:00:00 | Actual: 2026-09-08 05:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : BG-LIVE [BG-LIVE]
+Currency : PGK
+======================================
+RESULT WRITTEN: BG-LIVE [BG-LIVE] | PGK | PASS
+Modal Cancel clicked.
+Last currency completed for provider: BG-LIVE [BG-LIVE]
+No new modal will be opened.
+
+==============================================
+NORMAL CURRENCY PROCESSING COMPLETED
+Provider : BG-LIVE [BG-LIVE]
+No definite failed currencies.
+==============================================
+
+##############################################
+PROVIDER COMPLETED
+Provider : BG-LIVE [BG-LIVE]
+##############################################
+
+##############################################
+STARTING PROVIDER
+Provider : ATG-CARD [ATG-CARD]
+Start    : 2026-09-08 10:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+##############################################
+Fresh Add Notification modal opened.
+Currencies available: [THB, BDT, INR, PKR, SGD, AUD, HKD, MYR, NPR, PHP, MMK, IDR, USD, VND, LAK, TWD, PGK]
+
+==============================================
+Provider : ATG-CARD [ATG-CARD]
+Currency : THB
+Attempt  : 1
+==============================================
+Currency selected: THB
+Currency validation PASS
+Waiting for merchants to load for THB
+Merchant options found: 38
+Merchants selected: 38 / 38
+All merchants selected successfully for THB
+Provider selected successfully: ATG-CARD [ATG-CARD]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : ATG-CARD [ATG-CARD]
+Currency : THB
+Start    : 2026-09-08 10:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: ATG-CARD [ATG-CARD] | Actual: ATG-CARD [ATG-CARD] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 10:00:00 | Actual: 2026-09-08 10:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : ATG-CARD [ATG-CARD]
+Currency : THB
+======================================
+RESULT WRITTEN: ATG-CARD [ATG-CARD] | THB | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : ATG-CARD [ATG-CARD]
+Currency : BDT
+Attempt  : 1
+==============================================
+Currency selected: BDT
+Currency validation PASS
+Waiting for merchants to load for BDT
+Merchant options found: 11
+Merchants selected: 11 / 11
+All merchants selected successfully for BDT
+Provider selected successfully: ATG-CARD [ATG-CARD]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : ATG-CARD [ATG-CARD]
+Currency : BDT
+Start    : 2026-09-08 10:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: ATG-CARD [ATG-CARD] | Actual: ATG-CARD [ATG-CARD] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 10:00:00 | Actual: 2026-09-08 10:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : ATG-CARD [ATG-CARD]
+Currency : BDT
+======================================
+RESULT WRITTEN: ATG-CARD [ATG-CARD] | BDT | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : ATG-CARD [ATG-CARD]
+Currency : INR
+Attempt  : 1
+==============================================
+Currency selected: INR
+Currency validation PASS
+Waiting for merchants to load for INR
+Merchant options found: 5
+Merchants selected: 5 / 5
+All merchants selected successfully for INR
+Provider selected successfully: ATG-CARD [ATG-CARD]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : ATG-CARD [ATG-CARD]
+Currency : INR
+Start    : 2026-09-08 10:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: ATG-CARD [ATG-CARD] | Actual: ATG-CARD [ATG-CARD] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 10:00:00 | Actual: 2026-09-08 10:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : ATG-CARD [ATG-CARD]
+Currency : INR
+======================================
+RESULT WRITTEN: ATG-CARD [ATG-CARD] | INR | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : ATG-CARD [ATG-CARD]
+Currency : PKR
+Attempt  : 1
+==============================================
+Currency selected: PKR
+Currency validation PASS
+Waiting for merchants to load for PKR
+Merchant options found: 4
+Merchants selected: 4 / 4
+All merchants selected successfully for PKR
+Provider selected successfully: ATG-CARD [ATG-CARD]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : ATG-CARD [ATG-CARD]
+Currency : PKR
+Start    : 2026-09-08 10:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: ATG-CARD [ATG-CARD] | Actual: ATG-CARD [ATG-CARD] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 10:00:00 | Actual: 2026-09-08 10:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : ATG-CARD [ATG-CARD]
+Currency : PKR
+======================================
+RESULT WRITTEN: ATG-CARD [ATG-CARD] | PKR | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : ATG-CARD [ATG-CARD]
+Currency : SGD
+Attempt  : 1
+==============================================
+Currency selected: SGD
+Currency validation PASS
+Waiting for merchants to load for SGD
+Merchant options found: 9
+Merchants selected: 9 / 9
+All merchants selected successfully for SGD
+Provider selected successfully: ATG-CARD [ATG-CARD]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : ATG-CARD [ATG-CARD]
+Currency : SGD
+Start    : 2026-09-08 10:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: ATG-CARD [ATG-CARD] | Actual: ATG-CARD [ATG-CARD] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 10:00:00 | Actual: 2026-09-08 10:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : ATG-CARD [ATG-CARD]
+Currency : SGD
+======================================
+RESULT WRITTEN: ATG-CARD [ATG-CARD] | SGD | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : ATG-CARD [ATG-CARD]
+Currency : AUD
+Attempt  : 1
+==============================================
+Currency selected: AUD
+Currency validation PASS
+Waiting for merchants to load for AUD
+Merchant options found: 25
+Merchants selected: 25 / 25
+All merchants selected successfully for AUD
+Provider selected successfully: ATG-CARD [ATG-CARD]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : ATG-CARD [ATG-CARD]
+Currency : AUD
+Start    : 2026-09-08 10:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: ATG-CARD [ATG-CARD] | Actual: ATG-CARD [ATG-CARD] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 10:00:00 | Actual: 2026-09-08 10:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : ATG-CARD [ATG-CARD]
+Currency : AUD
+======================================
+RESULT WRITTEN: ATG-CARD [ATG-CARD] | AUD | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : ATG-CARD [ATG-CARD]
+Currency : HKD
+Attempt  : 1
+==============================================
+Currency selected: HKD
+Currency validation PASS
+Waiting for merchants to load for HKD
+Merchant options found: 3
+Merchants selected: 3 / 3
+All merchants selected successfully for HKD
+Provider selected successfully: ATG-CARD [ATG-CARD]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : ATG-CARD [ATG-CARD]
+Currency : HKD
+Start    : 2026-09-08 10:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: ATG-CARD [ATG-CARD] | Actual: ATG-CARD [ATG-CARD] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 10:00:00 | Actual: 2026-09-08 10:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : ATG-CARD [ATG-CARD]
+Currency : HKD
+======================================
+RESULT WRITTEN: ATG-CARD [ATG-CARD] | HKD | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : ATG-CARD [ATG-CARD]
+Currency : MYR
+Attempt  : 1
+==============================================
+Currency selected: MYR
+Currency validation PASS
+Waiting for merchants to load for MYR
+Merchant options found: 22
+Merchants selected: 22 / 22
+All merchants selected successfully for MYR
+Provider selected successfully: ATG-CARD [ATG-CARD]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : ATG-CARD [ATG-CARD]
+Currency : MYR
+Start    : 2026-09-08 10:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: ATG-CARD [ATG-CARD] | Actual: ATG-CARD [ATG-CARD] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 10:00:00 | Actual: 2026-09-08 10:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : ATG-CARD [ATG-CARD]
+Currency : MYR
+======================================
+RESULT WRITTEN: ATG-CARD [ATG-CARD] | MYR | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : ATG-CARD [ATG-CARD]
+Currency : NPR
+Attempt  : 1
+==============================================
+Currency selected: NPR
+Currency validation PASS
+Waiting for merchants to load for NPR
+Merchant options found: 32
+Merchants selected: 32 / 32
+All merchants selected successfully for NPR
+Provider selected successfully: ATG-CARD [ATG-CARD]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : ATG-CARD [ATG-CARD]
+Currency : NPR
+Start    : 2026-09-08 10:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: ATG-CARD [ATG-CARD] | Actual: ATG-CARD [ATG-CARD] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 10:00:00 | Actual: 2026-09-08 10:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : ATG-CARD [ATG-CARD]
+Currency : NPR
+======================================
+RESULT WRITTEN: ATG-CARD [ATG-CARD] | NPR | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : ATG-CARD [ATG-CARD]
+Currency : PHP
+Attempt  : 1
+==============================================
+Currency selected: PHP
+Currency validation PASS
+Waiting for merchants to load for PHP
+Merchant options found: 13
+Merchants selected: 13 / 13
+All merchants selected successfully for PHP
+Provider selected successfully: ATG-CARD [ATG-CARD]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : ATG-CARD [ATG-CARD]
+Currency : PHP
+Start    : 2026-09-08 10:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: ATG-CARD [ATG-CARD] | Actual: ATG-CARD [ATG-CARD] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 10:00:00 | Actual: 2026-09-08 10:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : ATG-CARD [ATG-CARD]
+Currency : PHP
+======================================
+RESULT WRITTEN: ATG-CARD [ATG-CARD] | PHP | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : ATG-CARD [ATG-CARD]
+Currency : MMK
+Attempt  : 1
+==============================================
+Currency selected: MMK
+Currency validation PASS
+Waiting for merchants to load for MMK
+Merchant options found: 2
+Merchants selected: 2 / 2
+All merchants selected successfully for MMK
+Provider selected successfully: ATG-CARD [ATG-CARD]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : ATG-CARD [ATG-CARD]
+Currency : MMK
+Start    : 2026-09-08 10:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: ATG-CARD [ATG-CARD] | Actual: ATG-CARD [ATG-CARD] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 10:00:00 | Actual: 2026-09-08 10:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : ATG-CARD [ATG-CARD]
+Currency : MMK
+======================================
+RESULT WRITTEN: ATG-CARD [ATG-CARD] | MMK | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : ATG-CARD [ATG-CARD]
+Currency : IDR
+Attempt  : 1
+==============================================
+Currency selected: IDR
+Currency validation PASS
+Waiting for merchants to load for IDR
+Merchant options found: 4
+Merchants selected: 4 / 4
+All merchants selected successfully for IDR
+Provider selected successfully: ATG-CARD [ATG-CARD]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : ATG-CARD [ATG-CARD]
+Currency : IDR
+Start    : 2026-09-08 10:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: ATG-CARD [ATG-CARD] | Actual: ATG-CARD [ATG-CARD] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 10:00:00 | Actual: 2026-09-08 10:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : ATG-CARD [ATG-CARD]
+Currency : IDR
+======================================
+RESULT WRITTEN: ATG-CARD [ATG-CARD] | IDR | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : ATG-CARD [ATG-CARD]
+Currency : USD
+Attempt  : 1
+==============================================
+Currency selected: USD
+Currency validation PASS
+Waiting for merchants to load for USD
+Merchant options found: 5
+Merchants selected: 5 / 5
+All merchants selected successfully for USD
+Provider selected successfully: ATG-CARD [ATG-CARD]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : ATG-CARD [ATG-CARD]
+Currency : USD
+Start    : 2026-09-08 10:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: ATG-CARD [ATG-CARD] | Actual: ATG-CARD [ATG-CARD] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 10:00:00 | Actual: 2026-09-08 10:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : ATG-CARD [ATG-CARD]
+Currency : USD
+======================================
+RESULT WRITTEN: ATG-CARD [ATG-CARD] | USD | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : ATG-CARD [ATG-CARD]
+Currency : VND
+Attempt  : 1
+==============================================
+Currency selected: VND
+Currency validation PASS
+Waiting for merchants to load for VND
+Merchant options found: 3
+Merchants selected: 3 / 3
+All merchants selected successfully for VND
+Provider selected successfully: ATG-CARD [ATG-CARD]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : ATG-CARD [ATG-CARD]
+Currency : VND
+Start    : 2026-09-08 10:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: ATG-CARD [ATG-CARD] | Actual: ATG-CARD [ATG-CARD] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 10:00:00 | Actual: 2026-09-08 10:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : ATG-CARD [ATG-CARD]
+Currency : VND
+======================================
+RESULT WRITTEN: ATG-CARD [ATG-CARD] | VND | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : ATG-CARD [ATG-CARD]
+Currency : LAK
+Attempt  : 1
+==============================================
+Currency selected: LAK
+Currency validation PASS
+Waiting for merchants to load for LAK
+Merchant options found: 2
+Merchants selected: 2 / 2
+All merchants selected successfully for LAK
+Provider selected successfully: ATG-CARD [ATG-CARD]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : ATG-CARD [ATG-CARD]
+Currency : LAK
+Start    : 2026-09-08 10:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: ATG-CARD [ATG-CARD] | Actual: ATG-CARD [ATG-CARD] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 10:00:00 | Actual: 2026-09-08 10:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : ATG-CARD [ATG-CARD]
+Currency : LAK
+======================================
+RESULT WRITTEN: ATG-CARD [ATG-CARD] | LAK | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : ATG-CARD [ATG-CARD]
+Currency : TWD
+Attempt  : 1
+==============================================
+Currency selected: TWD
+Currency validation PASS
+Waiting for merchants to load for TWD
+Merchant options found: 2
+Merchants selected: 2 / 2
+All merchants selected successfully for TWD
+Provider selected successfully: ATG-CARD [ATG-CARD]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : ATG-CARD [ATG-CARD]
+Currency : TWD
+Start    : 2026-09-08 10:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: ATG-CARD [ATG-CARD] | Actual: ATG-CARD [ATG-CARD] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 10:00:00 | Actual: 2026-09-08 10:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : ATG-CARD [ATG-CARD]
+Currency : TWD
+======================================
+RESULT WRITTEN: ATG-CARD [ATG-CARD] | TWD | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : ATG-CARD [ATG-CARD]
+Currency : PGK
+Attempt  : 1
+==============================================
+Currency selected: PGK
+Currency validation PASS
+Waiting for merchants to load for PGK
+Merchant options found: 3
+Merchants selected: 3 / 3
+All merchants selected successfully for PGK
+Provider selected successfully: ATG-CARD [ATG-CARD]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : ATG-CARD [ATG-CARD]
+Currency : PGK
+Start    : 2026-09-08 10:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: ATG-CARD [ATG-CARD] | Actual: ATG-CARD [ATG-CARD] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 10:00:00 | Actual: 2026-09-08 10:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : ATG-CARD [ATG-CARD]
+Currency : PGK
+======================================
+RESULT WRITTEN: ATG-CARD [ATG-CARD] | PGK | PASS
+Modal Cancel clicked.
+Last currency completed for provider: ATG-CARD [ATG-CARD]
+No new modal will be opened.
+
+==============================================
+NORMAL CURRENCY PROCESSING COMPLETED
+Provider : ATG-CARD [ATG-CARD]
+No definite failed currencies.
+==============================================
+
+##############################################
+PROVIDER COMPLETED
+Provider : ATG-CARD [ATG-CARD]
+##############################################
+
+##############################################
+STARTING PROVIDER
+Provider : ATG-INST [ATG-INST]
+Start    : 2026-09-08 10:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+##############################################
+Fresh Add Notification modal opened.
+Currencies available: [THB, BDT, INR, PKR, SGD, AUD, HKD, MYR, NPR, PHP, MMK, IDR, USD, VND, LAK, TWD, PGK]
+
+==============================================
+Provider : ATG-INST [ATG-INST]
+Currency : THB
+Attempt  : 1
+==============================================
+Currency selected: THB
+Currency validation PASS
+Waiting for merchants to load for THB
+Merchant options found: 38
+Merchants selected: 38 / 38
+All merchants selected successfully for THB
+Provider selected successfully: ATG-INST [ATG-INST]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : ATG-INST [ATG-INST]
+Currency : THB
+Start    : 2026-09-08 10:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: ATG-INST [ATG-INST] | Actual: ATG-INST [ATG-INST] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 10:00:00 | Actual: 2026-09-08 10:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : ATG-INST [ATG-INST]
+Currency : THB
+======================================
+RESULT WRITTEN: ATG-INST [ATG-INST] | THB | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : ATG-INST [ATG-INST]
+Currency : BDT
+Attempt  : 1
+==============================================
+Currency selected: BDT
+Currency validation PASS
+Waiting for merchants to load for BDT
+Merchant options found: 11
+Merchants selected: 11 / 11
+All merchants selected successfully for BDT
+Provider selected successfully: ATG-INST [ATG-INST]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : ATG-INST [ATG-INST]
+Currency : BDT
+Start    : 2026-09-08 10:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: ATG-INST [ATG-INST] | Actual: ATG-INST [ATG-INST] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 10:00:00 | Actual: 2026-09-08 10:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : ATG-INST [ATG-INST]
+Currency : BDT
+======================================
+RESULT WRITTEN: ATG-INST [ATG-INST] | BDT | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : ATG-INST [ATG-INST]
+Currency : INR
+Attempt  : 1
+==============================================
+Currency selected: INR
+Currency validation PASS
+Waiting for merchants to load for INR
+Merchant options found: 5
+Merchants selected: 5 / 5
+All merchants selected successfully for INR
+Provider selected successfully: ATG-INST [ATG-INST]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : ATG-INST [ATG-INST]
+Currency : INR
+Start    : 2026-09-08 10:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: ATG-INST [ATG-INST] | Actual: ATG-INST [ATG-INST] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 10:00:00 | Actual: 2026-09-08 10:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : ATG-INST [ATG-INST]
+Currency : INR
+======================================
+RESULT WRITTEN: ATG-INST [ATG-INST] | INR | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : ATG-INST [ATG-INST]
+Currency : PKR
+Attempt  : 1
+==============================================
+Currency selected: PKR
+Currency validation PASS
+Waiting for merchants to load for PKR
+Merchant options found: 4
+Merchants selected: 4 / 4
+All merchants selected successfully for PKR
+Provider selected successfully: ATG-INST [ATG-INST]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : ATG-INST [ATG-INST]
+Currency : PKR
+Start    : 2026-09-08 10:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: ATG-INST [ATG-INST] | Actual: ATG-INST [ATG-INST] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 10:00:00 | Actual: 2026-09-08 10:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : ATG-INST [ATG-INST]
+Currency : PKR
+======================================
+RESULT WRITTEN: ATG-INST [ATG-INST] | PKR | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : ATG-INST [ATG-INST]
+Currency : SGD
+Attempt  : 1
+==============================================
+Currency selected: SGD
+Currency validation PASS
+Waiting for merchants to load for SGD
+Merchant options found: 9
+Merchants selected: 9 / 9
+All merchants selected successfully for SGD
+Provider selected successfully: ATG-INST [ATG-INST]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : ATG-INST [ATG-INST]
+Currency : SGD
+Start    : 2026-09-08 10:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: ATG-INST [ATG-INST] | Actual: ATG-INST [ATG-INST] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 10:00:00 | Actual: 2026-09-08 10:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : ATG-INST [ATG-INST]
+Currency : SGD
+======================================
+RESULT WRITTEN: ATG-INST [ATG-INST] | SGD | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : ATG-INST [ATG-INST]
+Currency : AUD
+Attempt  : 1
+==============================================
+Currency selected: AUD
+Currency validation PASS
+Waiting for merchants to load for AUD
+Merchant options found: 25
+Merchants selected: 25 / 25
+All merchants selected successfully for AUD
+Provider selected successfully: ATG-INST [ATG-INST]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : ATG-INST [ATG-INST]
+Currency : AUD
+Start    : 2026-09-08 10:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: ATG-INST [ATG-INST] | Actual: ATG-INST [ATG-INST] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 10:00:00 | Actual: 2026-09-08 10:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : ATG-INST [ATG-INST]
+Currency : AUD
+======================================
+RESULT WRITTEN: ATG-INST [ATG-INST] | AUD | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : ATG-INST [ATG-INST]
+Currency : HKD
+Attempt  : 1
+==============================================
+Currency selected: HKD
+Currency validation PASS
+Waiting for merchants to load for HKD
+Merchant options found: 3
+Merchants selected: 3 / 3
+All merchants selected successfully for HKD
+Provider selected successfully: ATG-INST [ATG-INST]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : ATG-INST [ATG-INST]
+Currency : HKD
+Start    : 2026-09-08 10:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: ATG-INST [ATG-INST] | Actual: ATG-INST [ATG-INST] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 10:00:00 | Actual: 2026-09-08 10:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : ATG-INST [ATG-INST]
+Currency : HKD
+======================================
+RESULT WRITTEN: ATG-INST [ATG-INST] | HKD | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : ATG-INST [ATG-INST]
+Currency : MYR
+Attempt  : 1
+==============================================
+Currency selected: MYR
+Currency validation PASS
+Waiting for merchants to load for MYR
+Merchant options found: 22
+Merchants selected: 22 / 22
+All merchants selected successfully for MYR
+Provider selected successfully: ATG-INST [ATG-INST]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : ATG-INST [ATG-INST]
+Currency : MYR
+Start    : 2026-09-08 10:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: ATG-INST [ATG-INST] | Actual: ATG-INST [ATG-INST] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 10:00:00 | Actual: 2026-09-08 10:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : ATG-INST [ATG-INST]
+Currency : MYR
+======================================
+RESULT WRITTEN: ATG-INST [ATG-INST] | MYR | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : ATG-INST [ATG-INST]
+Currency : NPR
+Attempt  : 1
+==============================================
+Currency selected: NPR
+Currency validation PASS
+Waiting for merchants to load for NPR
+Merchant options found: 32
+Merchants selected: 32 / 32
+All merchants selected successfully for NPR
+Provider selected successfully: ATG-INST [ATG-INST]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : ATG-INST [ATG-INST]
+Currency : NPR
+Start    : 2026-09-08 10:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: ATG-INST [ATG-INST] | Actual: ATG-INST [ATG-INST] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 10:00:00 | Actual: 2026-09-08 10:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : ATG-INST [ATG-INST]
+Currency : NPR
+======================================
+RESULT WRITTEN: ATG-INST [ATG-INST] | NPR | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : ATG-INST [ATG-INST]
+Currency : PHP
+Attempt  : 1
+==============================================
+Currency selected: PHP
+Currency validation PASS
+Waiting for merchants to load for PHP
+Merchant options found: 13
+Merchants selected: 13 / 13
+All merchants selected successfully for PHP
+Provider selected successfully: ATG-INST [ATG-INST]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : ATG-INST [ATG-INST]
+Currency : PHP
+Start    : 2026-09-08 10:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: ATG-INST [ATG-INST] | Actual: ATG-INST [ATG-INST] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 10:00:00 | Actual: 2026-09-08 10:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : ATG-INST [ATG-INST]
+Currency : PHP
+======================================
+RESULT WRITTEN: ATG-INST [ATG-INST] | PHP | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : ATG-INST [ATG-INST]
+Currency : MMK
+Attempt  : 1
+==============================================
+Currency selected: MMK
+Currency validation PASS
+Waiting for merchants to load for MMK
+Merchant options found: 2
+Merchants selected: 2 / 2
+All merchants selected successfully for MMK
+Provider selected successfully: ATG-INST [ATG-INST]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : ATG-INST [ATG-INST]
+Currency : MMK
+Start    : 2026-09-08 10:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: ATG-INST [ATG-INST] | Actual: ATG-INST [ATG-INST] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 10:00:00 | Actual: 2026-09-08 10:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : ATG-INST [ATG-INST]
+Currency : MMK
+======================================
+RESULT WRITTEN: ATG-INST [ATG-INST] | MMK | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : ATG-INST [ATG-INST]
+Currency : IDR
+Attempt  : 1
+==============================================
+Currency selected: IDR
+Currency validation PASS
+Waiting for merchants to load for IDR
+Merchant options found: 4
+Merchants selected: 4 / 4
+All merchants selected successfully for IDR
+Provider selected successfully: ATG-INST [ATG-INST]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : ATG-INST [ATG-INST]
+Currency : IDR
+Start    : 2026-09-08 10:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: ATG-INST [ATG-INST] | Actual: ATG-INST [ATG-INST] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 10:00:00 | Actual: 2026-09-08 10:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : ATG-INST [ATG-INST]
+Currency : IDR
+======================================
+RESULT WRITTEN: ATG-INST [ATG-INST] | IDR | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : ATG-INST [ATG-INST]
+Currency : USD
+Attempt  : 1
+==============================================
+Currency selected: USD
+Currency validation PASS
+Waiting for merchants to load for USD
+Merchant options found: 5
+Merchants selected: 5 / 5
+All merchants selected successfully for USD
+Provider selected successfully: ATG-INST [ATG-INST]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : ATG-INST [ATG-INST]
+Currency : USD
+Start    : 2026-09-08 10:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: ATG-INST [ATG-INST] | Actual: ATG-INST [ATG-INST] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 10:00:00 | Actual: 2026-09-08 10:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : ATG-INST [ATG-INST]
+Currency : USD
+======================================
+RESULT WRITTEN: ATG-INST [ATG-INST] | USD | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : ATG-INST [ATG-INST]
+Currency : VND
+Attempt  : 1
+==============================================
+Currency selected: VND
+Currency validation PASS
+Waiting for merchants to load for VND
+Merchant options found: 3
+Merchants selected: 3 / 3
+All merchants selected successfully for VND
+Provider selected successfully: ATG-INST [ATG-INST]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : ATG-INST [ATG-INST]
+Currency : VND
+Start    : 2026-09-08 10:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: ATG-INST [ATG-INST] | Actual: ATG-INST [ATG-INST] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 10:00:00 | Actual: 2026-09-08 10:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : ATG-INST [ATG-INST]
+Currency : VND
+======================================
+RESULT WRITTEN: ATG-INST [ATG-INST] | VND | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : ATG-INST [ATG-INST]
+Currency : LAK
+Attempt  : 1
+==============================================
+Currency selected: LAK
+Currency validation PASS
+Waiting for merchants to load for LAK
+Merchant options found: 2
+Merchants selected: 2 / 2
+All merchants selected successfully for LAK
+Provider selected successfully: ATG-INST [ATG-INST]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : ATG-INST [ATG-INST]
+Currency : LAK
+Start    : 2026-09-08 10:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: ATG-INST [ATG-INST] | Actual: ATG-INST [ATG-INST] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 10:00:00 | Actual: 2026-09-08 10:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : ATG-INST [ATG-INST]
+Currency : LAK
+======================================
+RESULT WRITTEN: ATG-INST [ATG-INST] | LAK | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : ATG-INST [ATG-INST]
+Currency : TWD
+Attempt  : 1
+==============================================
+Currency selected: TWD
+Currency validation PASS
+Waiting for merchants to load for TWD
+Merchant options found: 2
+Merchants selected: 2 / 2
+All merchants selected successfully for TWD
+Provider selected successfully: ATG-INST [ATG-INST]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : ATG-INST [ATG-INST]
+Currency : TWD
+Start    : 2026-09-08 10:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: ATG-INST [ATG-INST] | Actual: ATG-INST [ATG-INST] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 10:00:00 | Actual: 2026-09-08 10:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : ATG-INST [ATG-INST]
+Currency : TWD
+======================================
+RESULT WRITTEN: ATG-INST [ATG-INST] | TWD | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : ATG-INST [ATG-INST]
+Currency : PGK
+Attempt  : 1
+==============================================
+Currency selected: PGK
+Currency validation PASS
+Waiting for merchants to load for PGK
+Merchant options found: 3
+Merchants selected: 3 / 3
+All merchants selected successfully for PGK
+Provider selected successfully: ATG-INST [ATG-INST]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : ATG-INST [ATG-INST]
+Currency : PGK
+Start    : 2026-09-08 10:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: ATG-INST [ATG-INST] | Actual: ATG-INST [ATG-INST] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 10:00:00 | Actual: 2026-09-08 10:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : ATG-INST [ATG-INST]
+Currency : PGK
+======================================
+RESULT WRITTEN: ATG-INST [ATG-INST] | PGK | PASS
+Modal Cancel clicked.
+Last currency completed for provider: ATG-INST [ATG-INST]
+No new modal will be opened.
+
+==============================================
+NORMAL CURRENCY PROCESSING COMPLETED
+Provider : ATG-INST [ATG-INST]
+No definite failed currencies.
+==============================================
+
+##############################################
+PROVIDER COMPLETED
+Provider : ATG-INST [ATG-INST]
+##############################################
+
+##############################################
+STARTING PROVIDER
+Provider : ATG-SLOT [ATG-SLOT]
+Start    : 2026-09-08 10:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+##############################################
+Fresh Add Notification modal opened.
+Currencies available: [THB, BDT, INR, PKR, SGD, AUD, HKD, MYR, NPR, PHP, MMK, IDR, USD, VND, LAK, TWD, PGK]
+
+==============================================
+Provider : ATG-SLOT [ATG-SLOT]
+Currency : THB
+Attempt  : 1
+==============================================
+Currency selected: THB
+Currency validation PASS
+Waiting for merchants to load for THB
+Merchant options found: 38
+Merchants selected: 38 / 38
+All merchants selected successfully for THB
+Provider selected successfully: ATG-SLOT [ATG-SLOT]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : ATG-SLOT [ATG-SLOT]
+Currency : THB
+Start    : 2026-09-08 10:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: ATG-SLOT [ATG-SLOT] | Actual: ATG-SLOT [ATG-SLOT] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 10:00:00 | Actual: 2026-09-08 10:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : ATG-SLOT [ATG-SLOT]
+Currency : THB
+======================================
+RESULT WRITTEN: ATG-SLOT [ATG-SLOT] | THB | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : ATG-SLOT [ATG-SLOT]
+Currency : BDT
+Attempt  : 1
+==============================================
+Currency selected: BDT
+Currency validation PASS
+Waiting for merchants to load for BDT
+Merchant options found: 11
+Merchants selected: 11 / 11
+All merchants selected successfully for BDT
+Provider selected successfully: ATG-SLOT [ATG-SLOT]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : ATG-SLOT [ATG-SLOT]
+Currency : BDT
+Start    : 2026-09-08 10:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: ATG-SLOT [ATG-SLOT] | Actual: ATG-SLOT [ATG-SLOT] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 10:00:00 | Actual: 2026-09-08 10:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : ATG-SLOT [ATG-SLOT]
+Currency : BDT
+======================================
+RESULT WRITTEN: ATG-SLOT [ATG-SLOT] | BDT | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : ATG-SLOT [ATG-SLOT]
+Currency : INR
+Attempt  : 1
+==============================================
+Currency selected: INR
+Currency validation PASS
+Waiting for merchants to load for INR
+Merchant options found: 5
+Merchants selected: 5 / 5
+All merchants selected successfully for INR
+Provider selected successfully: ATG-SLOT [ATG-SLOT]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : ATG-SLOT [ATG-SLOT]
+Currency : INR
+Start    : 2026-09-08 10:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: ATG-SLOT [ATG-SLOT] | Actual: ATG-SLOT [ATG-SLOT] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 10:00:00 | Actual: 2026-09-08 10:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : ATG-SLOT [ATG-SLOT]
+Currency : INR
+======================================
+RESULT WRITTEN: ATG-SLOT [ATG-SLOT] | INR | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : ATG-SLOT [ATG-SLOT]
+Currency : PKR
+Attempt  : 1
+==============================================
+Currency selected: PKR
+Currency validation PASS
+Waiting for merchants to load for PKR
+Merchant options found: 4
+Merchants selected: 4 / 4
+All merchants selected successfully for PKR
+Provider selected successfully: ATG-SLOT [ATG-SLOT]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : ATG-SLOT [ATG-SLOT]
+Currency : PKR
+Start    : 2026-09-08 10:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: ATG-SLOT [ATG-SLOT] | Actual: ATG-SLOT [ATG-SLOT] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 10:00:00 | Actual: 2026-09-08 10:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : ATG-SLOT [ATG-SLOT]
+Currency : PKR
+======================================
+RESULT WRITTEN: ATG-SLOT [ATG-SLOT] | PKR | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : ATG-SLOT [ATG-SLOT]
+Currency : SGD
+Attempt  : 1
+==============================================
+Currency selected: SGD
+Currency validation PASS
+Waiting for merchants to load for SGD
+Merchant options found: 9
+Merchants selected: 9 / 9
+All merchants selected successfully for SGD
+Provider selected successfully: ATG-SLOT [ATG-SLOT]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : ATG-SLOT [ATG-SLOT]
+Currency : SGD
+Start    : 2026-09-08 10:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: ATG-SLOT [ATG-SLOT] | Actual: ATG-SLOT [ATG-SLOT] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 10:00:00 | Actual: 2026-09-08 10:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : ATG-SLOT [ATG-SLOT]
+Currency : SGD
+======================================
+RESULT WRITTEN: ATG-SLOT [ATG-SLOT] | SGD | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : ATG-SLOT [ATG-SLOT]
+Currency : AUD
+Attempt  : 1
+==============================================
+Currency selected: AUD
+Currency validation PASS
+Waiting for merchants to load for AUD
+Merchant options found: 25
+Merchants selected: 25 / 25
+All merchants selected successfully for AUD
+Provider selected successfully: ATG-SLOT [ATG-SLOT]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : ATG-SLOT [ATG-SLOT]
+Currency : AUD
+Start    : 2026-09-08 10:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: ATG-SLOT [ATG-SLOT] | Actual: ATG-SLOT [ATG-SLOT] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 10:00:00 | Actual: 2026-09-08 10:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : ATG-SLOT [ATG-SLOT]
+Currency : AUD
+======================================
+RESULT WRITTEN: ATG-SLOT [ATG-SLOT] | AUD | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : ATG-SLOT [ATG-SLOT]
+Currency : HKD
+Attempt  : 1
+==============================================
+Currency selected: HKD
+Currency validation PASS
+Waiting for merchants to load for HKD
+Merchant options found: 3
+Merchants selected: 3 / 3
+All merchants selected successfully for HKD
+Provider selected successfully: ATG-SLOT [ATG-SLOT]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : ATG-SLOT [ATG-SLOT]
+Currency : HKD
+Start    : 2026-09-08 10:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: ATG-SLOT [ATG-SLOT] | Actual: ATG-SLOT [ATG-SLOT] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 10:00:00 | Actual: 2026-09-08 10:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : ATG-SLOT [ATG-SLOT]
+Currency : HKD
+======================================
+RESULT WRITTEN: ATG-SLOT [ATG-SLOT] | HKD | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : ATG-SLOT [ATG-SLOT]
+Currency : MYR
+Attempt  : 1
+==============================================
+Currency selected: MYR
+Currency validation PASS
+Waiting for merchants to load for MYR
+Merchant options found: 22
+Merchants selected: 22 / 22
+All merchants selected successfully for MYR
+Provider selected successfully: ATG-SLOT [ATG-SLOT]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : ATG-SLOT [ATG-SLOT]
+Currency : MYR
+Start    : 2026-09-08 10:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: ATG-SLOT [ATG-SLOT] | Actual: ATG-SLOT [ATG-SLOT] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 10:00:00 | Actual: 2026-09-08 10:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : ATG-SLOT [ATG-SLOT]
+Currency : MYR
+======================================
+RESULT WRITTEN: ATG-SLOT [ATG-SLOT] | MYR | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : ATG-SLOT [ATG-SLOT]
+Currency : NPR
+Attempt  : 1
+==============================================
+Currency selected: NPR
+Currency validation PASS
+Waiting for merchants to load for NPR
+Merchant options found: 32
+Merchants selected: 32 / 32
+All merchants selected successfully for NPR
+Provider selected successfully: ATG-SLOT [ATG-SLOT]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : ATG-SLOT [ATG-SLOT]
+Currency : NPR
+Start    : 2026-09-08 10:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: ATG-SLOT [ATG-SLOT] | Actual: ATG-SLOT [ATG-SLOT] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 10:00:00 | Actual: 2026-09-08 10:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : ATG-SLOT [ATG-SLOT]
+Currency : NPR
+======================================
+RESULT WRITTEN: ATG-SLOT [ATG-SLOT] | NPR | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : ATG-SLOT [ATG-SLOT]
+Currency : PHP
+Attempt  : 1
+==============================================
+Currency selected: PHP
+Currency validation PASS
+Waiting for merchants to load for PHP
+Merchant options found: 13
+Merchants selected: 13 / 13
+All merchants selected successfully for PHP
+Provider selected successfully: ATG-SLOT [ATG-SLOT]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : ATG-SLOT [ATG-SLOT]
+Currency : PHP
+Start    : 2026-09-08 10:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: ATG-SLOT [ATG-SLOT] | Actual: ATG-SLOT [ATG-SLOT] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 10:00:00 | Actual: 2026-09-08 10:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : ATG-SLOT [ATG-SLOT]
+Currency : PHP
+======================================
+RESULT WRITTEN: ATG-SLOT [ATG-SLOT] | PHP | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : ATG-SLOT [ATG-SLOT]
+Currency : MMK
+Attempt  : 1
+==============================================
+Currency selected: MMK
+Currency validation PASS
+Waiting for merchants to load for MMK
+Merchant options found: 2
+Merchants selected: 2 / 2
+All merchants selected successfully for MMK
+Provider selected successfully: ATG-SLOT [ATG-SLOT]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : ATG-SLOT [ATG-SLOT]
+Currency : MMK
+Start    : 2026-09-08 10:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: ATG-SLOT [ATG-SLOT] | Actual: ATG-SLOT [ATG-SLOT] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 10:00:00 | Actual: 2026-09-08 10:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : ATG-SLOT [ATG-SLOT]
+Currency : MMK
+======================================
+RESULT WRITTEN: ATG-SLOT [ATG-SLOT] | MMK | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : ATG-SLOT [ATG-SLOT]
+Currency : IDR
+Attempt  : 1
+==============================================
+Currency selected: IDR
+Currency validation PASS
+Waiting for merchants to load for IDR
+Merchant options found: 4
+Merchants selected: 4 / 4
+All merchants selected successfully for IDR
+Provider selected successfully: ATG-SLOT [ATG-SLOT]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : ATG-SLOT [ATG-SLOT]
+Currency : IDR
+Start    : 2026-09-08 10:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: ATG-SLOT [ATG-SLOT] | Actual: ATG-SLOT [ATG-SLOT] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 10:00:00 | Actual: 2026-09-08 10:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : ATG-SLOT [ATG-SLOT]
+Currency : IDR
+======================================
+RESULT WRITTEN: ATG-SLOT [ATG-SLOT] | IDR | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : ATG-SLOT [ATG-SLOT]
+Currency : USD
+Attempt  : 1
+==============================================
+Currency selected: USD
+Currency validation PASS
+Waiting for merchants to load for USD
+Merchant options found: 5
+Merchants selected: 5 / 5
+All merchants selected successfully for USD
+Provider selected successfully: ATG-SLOT [ATG-SLOT]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : ATG-SLOT [ATG-SLOT]
+Currency : USD
+Start    : 2026-09-08 10:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: ATG-SLOT [ATG-SLOT] | Actual: ATG-SLOT [ATG-SLOT] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 10:00:00 | Actual: 2026-09-08 10:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : ATG-SLOT [ATG-SLOT]
+Currency : USD
+======================================
+RESULT WRITTEN: ATG-SLOT [ATG-SLOT] | USD | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : ATG-SLOT [ATG-SLOT]
+Currency : VND
+Attempt  : 1
+==============================================
+Currency selected: VND
+Currency validation PASS
+Waiting for merchants to load for VND
+Merchant options found: 3
+Merchants selected: 3 / 3
+All merchants selected successfully for VND
+Provider selected successfully: ATG-SLOT [ATG-SLOT]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : ATG-SLOT [ATG-SLOT]
+Currency : VND
+Start    : 2026-09-08 10:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: ATG-SLOT [ATG-SLOT] | Actual: ATG-SLOT [ATG-SLOT] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 10:00:00 | Actual: 2026-09-08 10:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : ATG-SLOT [ATG-SLOT]
+Currency : VND
+======================================
+RESULT WRITTEN: ATG-SLOT [ATG-SLOT] | VND | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : ATG-SLOT [ATG-SLOT]
+Currency : LAK
+Attempt  : 1
+==============================================
+Currency selected: LAK
+Currency validation PASS
+Waiting for merchants to load for LAK
+Merchant options found: 2
+Merchants selected: 2 / 2
+All merchants selected successfully for LAK
+Provider selected successfully: ATG-SLOT [ATG-SLOT]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : ATG-SLOT [ATG-SLOT]
+Currency : LAK
+Start    : 2026-09-08 10:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: ATG-SLOT [ATG-SLOT] | Actual: ATG-SLOT [ATG-SLOT] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 10:00:00 | Actual: 2026-09-08 10:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : ATG-SLOT [ATG-SLOT]
+Currency : LAK
+======================================
+RESULT WRITTEN: ATG-SLOT [ATG-SLOT] | LAK | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : ATG-SLOT [ATG-SLOT]
+Currency : TWD
+Attempt  : 1
+==============================================
+Currency selected: TWD
+Currency validation PASS
+Waiting for merchants to load for TWD
+Merchant options found: 2
+Merchants selected: 2 / 2
+All merchants selected successfully for TWD
+Provider selected successfully: ATG-SLOT [ATG-SLOT]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : ATG-SLOT [ATG-SLOT]
+Currency : TWD
+Start    : 2026-09-08 10:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: ATG-SLOT [ATG-SLOT] | Actual: ATG-SLOT [ATG-SLOT] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 10:00:00 | Actual: 2026-09-08 10:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : ATG-SLOT [ATG-SLOT]
+Currency : TWD
+======================================
+RESULT WRITTEN: ATG-SLOT [ATG-SLOT] | TWD | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : ATG-SLOT [ATG-SLOT]
+Currency : PGK
+Attempt  : 1
+==============================================
+Currency selected: PGK
+Currency validation PASS
+Waiting for merchants to load for PGK
+Merchant options found: 3
+Merchants selected: 3 / 3
+All merchants selected successfully for PGK
+Provider selected successfully: ATG-SLOT [ATG-SLOT]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : ATG-SLOT [ATG-SLOT]
+Currency : PGK
+Start    : 2026-09-08 10:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: ATG-SLOT [ATG-SLOT] | Actual: ATG-SLOT [ATG-SLOT] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 10:00:00 | Actual: 2026-09-08 10:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : ATG-SLOT [ATG-SLOT]
+Currency : PGK
+======================================
+RESULT WRITTEN: ATG-SLOT [ATG-SLOT] | PGK | PASS
+Modal Cancel clicked.
+Last currency completed for provider: ATG-SLOT [ATG-SLOT]
+No new modal will be opened.
+
+==============================================
+NORMAL CURRENCY PROCESSING COMPLETED
+Provider : ATG-SLOT [ATG-SLOT]
+No definite failed currencies.
+==============================================
+
+##############################################
+PROVIDER COMPLETED
+Provider : ATG-SLOT [ATG-SLOT]
+##############################################
+Blank provider row found.
+Skipping Excel row.
+Blank provider row found.
+Skipping Excel row.
+Blank provider row found.
+Skipping Excel row.
+Blank provider row found.
+Skipping Excel row.
+
+==============================================
+ALL EXCEL PROVIDERS COMPLETED
+==============================================
+[WARNING] thread Thread[#48,CompletableFutureDelayScheduler,5,com.framework.practice] was interrupted but is still alive after waiting at least 14998msecs
+[WARNING] thread Thread[#48,CompletableFutureDelayScheduler,5,com.framework.practice] will linger despite being asked to die via interruption
+[WARNING] thread Thread[#62,UrlChecker-3,5,com.framework.practice] will linger despite being asked to die via interruption
+[WARNING] NOTE: 2 thread(s) did not finish despite being asked to via interruption. This is not a problem with exec:java, it is a problem with the running code. Although not serious, it should be remedied.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  22:49 min
+[INFO] Finished at: 2026-09-07T12:06:43+05:30
+[INFO] ------------------------------------------------------------------------
+ 
+Automation Exit Code: 0 
+Automation Finished: Mon 09/07/2026 12:06:43.51 
+========================================== 
+========================================== 
+Automation Started: Mon 09/07/2026 12:30:13.94 
+Project Directory: C:\Users\Akashkumar\Desktop\vs code\.vscode\selenium\maintenance 
+========================================== 
+ 
+[1] Java Version 
+java version "21.0.9" 2025-10-21 LTS
+Java(TM) SE Runtime Environment (build 21.0.9+7-LTS-338)
+Java HotSpot(TM) 64-Bit Server VM (build 21.0.9+7-LTS-338, mixed mode, sharing)
+ 
+[2] Maven Version 
+Apache Maven 3.9.12 (848fbb4bf2d427b72bdb2471c22fced7ebd9a7a1)
+Maven home: C:\Tools\apache-maven\apache-maven-3.9.12
+Java version: 21.0.9, vendor: Oracle Corporation, runtime: C:\Program Files\Java\jdk-21
+Default locale: en_US, platform encoding: UTF-8
+OS name: "windows 11", version: "10.0", arch: "amd64", family: "windows"
+ 
+[3] Maven Clean Compile 
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< com.example:selenium >------------------------
+[INFO] Building selenium 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ selenium ---
+[INFO] Deleting C:\Users\Akashkumar\Desktop\vs code\.vscode\selenium\maintenance\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ selenium ---
+[INFO] skip non existing resourceDirectory C:\Users\Akashkumar\Desktop\vs code\.vscode\selenium\maintenance\src\main\resources
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ selenium ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 7 source files with javac [debug target 21] to target\classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.546 s
+[INFO] Finished at: 2026-09-07T12:30:19+05:30
+[INFO] ------------------------------------------------------------------------
+Compile Exit Code: 0 
+ 
+[4] Starting Selenium Automation 
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< com.example:selenium >------------------------
+[INFO] Building selenium 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec:3.5.0:java (default-cli) @ selenium ---
+ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+Total Rows : 8
+Sep 07, 2026 12:30:25 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 152
+Sep 07, 2026 12:30:26 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 152.0.7977.76. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Login successful.
+System Notification opened.
+
+##############################################
+STARTING PROVIDER
+Provider : PEGASUS-LIVE [PEGASUS-LIVE]
+Start    : 2026-09-08 09:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+##############################################
+Fresh Add Notification modal opened.
+Currencies available: [THB, BDT, INR, PKR, SGD, AUD, HKD, MYR, NPR, PHP, MMK, IDR, USD, VND, LAK, TWD, PGK]
+
+==============================================
+Provider : PEGASUS-LIVE [PEGASUS-LIVE]
+Currency : THB
+Attempt  : 1
+==============================================
+Currency selected: THB
+Currency validation PASS
+Waiting for merchants to load for THB
+Merchant options found: 38
+Merchants selected: 38 / 38
+All merchants selected successfully for THB
+Provider selected successfully: PEGASUS-LIVE [PEGASUS-LIVE]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : PEGASUS-LIVE [PEGASUS-LIVE]
+Currency : THB
+Start    : 2026-09-08 09:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: PEGASUS-LIVE [PEGASUS-LIVE] | Actual: PEGASUS-LIVE [PEGASUS-LIVE] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 09:00:00 | Actual: 2026-09-08 09:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : PEGASUS-LIVE [PEGASUS-LIVE]
+Currency : THB
+======================================
+RESULT WRITTEN: PEGASUS-LIVE [PEGASUS-LIVE] | THB | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : PEGASUS-LIVE [PEGASUS-LIVE]
+Currency : BDT
+Attempt  : 1
+==============================================
+Currency selected: BDT
+Currency validation PASS
+Waiting for merchants to load for BDT
+Merchant options found: 11
+Merchants selected: 11 / 11
+All merchants selected successfully for BDT
+Provider selected successfully: PEGASUS-LIVE [PEGASUS-LIVE]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : PEGASUS-LIVE [PEGASUS-LIVE]
+Currency : BDT
+Start    : 2026-09-08 09:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: PEGASUS-LIVE [PEGASUS-LIVE] | Actual: PEGASUS-LIVE [PEGASUS-LIVE] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 09:00:00 | Actual: 2026-09-08 09:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : PEGASUS-LIVE [PEGASUS-LIVE]
+Currency : BDT
+======================================
+RESULT WRITTEN: PEGASUS-LIVE [PEGASUS-LIVE] | BDT | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : PEGASUS-LIVE [PEGASUS-LIVE]
+Currency : INR
+Attempt  : 1
+==============================================
+Currency selected: INR
+Currency validation PASS
+Waiting for merchants to load for INR
+Merchant options found: 5
+Merchants selected: 5 / 5
+All merchants selected successfully for INR
+Provider selected successfully: PEGASUS-LIVE [PEGASUS-LIVE]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : PEGASUS-LIVE [PEGASUS-LIVE]
+Currency : INR
+Start    : 2026-09-08 09:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: PEGASUS-LIVE [PEGASUS-LIVE] | Actual: PEGASUS-LIVE [PEGASUS-LIVE] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 09:00:00 | Actual: 2026-09-08 09:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : PEGASUS-LIVE [PEGASUS-LIVE]
+Currency : INR
+======================================
+RESULT WRITTEN: PEGASUS-LIVE [PEGASUS-LIVE] | INR | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : PEGASUS-LIVE [PEGASUS-LIVE]
+Currency : PKR
+Attempt  : 1
+==============================================
+Currency selected: PKR
+Currency validation PASS
+Waiting for merchants to load for PKR
+Merchant options found: 4
+Merchants selected: 4 / 4
+All merchants selected successfully for PKR
+Provider selected successfully: PEGASUS-LIVE [PEGASUS-LIVE]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : PEGASUS-LIVE [PEGASUS-LIVE]
+Currency : PKR
+Start    : 2026-09-08 09:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: PEGASUS-LIVE [PEGASUS-LIVE] | Actual: PEGASUS-LIVE [PEGASUS-LIVE] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 09:00:00 | Actual: 2026-09-08 09:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : PEGASUS-LIVE [PEGASUS-LIVE]
+Currency : PKR
+======================================
+RESULT WRITTEN: PEGASUS-LIVE [PEGASUS-LIVE] | PKR | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : PEGASUS-LIVE [PEGASUS-LIVE]
+Currency : SGD
+Attempt  : 1
+==============================================
+Currency selected: SGD
+Currency validation PASS
+Waiting for merchants to load for SGD
+Merchant options found: 9
+Merchants selected: 9 / 9
+All merchants selected successfully for SGD
+Provider selected successfully: PEGASUS-LIVE [PEGASUS-LIVE]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : PEGASUS-LIVE [PEGASUS-LIVE]
+Currency : SGD
+Start    : 2026-09-08 09:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: PEGASUS-LIVE [PEGASUS-LIVE] | Actual: PEGASUS-LIVE [PEGASUS-LIVE] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 09:00:00 | Actual: 2026-09-08 09:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : PEGASUS-LIVE [PEGASUS-LIVE]
+Currency : SGD
+======================================
+RESULT WRITTEN: PEGASUS-LIVE [PEGASUS-LIVE] | SGD | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : PEGASUS-LIVE [PEGASUS-LIVE]
+Currency : AUD
+Attempt  : 1
+==============================================
+Currency selected: AUD
+Currency validation PASS
+AJAX loader did not disappear within 15 seconds.
+Currency AJAX did not finish.
+RESULT WRITTEN: PEGASUS-LIVE [PEGASUS-LIVE] | AUD | FAIL
+RECORDED FAIL: PEGASUS-LIVE [PEGASUS-LIVE] | AUD | Currency selection failed
+Modal Cancel clicked.
+Normal Add Notification click failed.
+Using JavaScript click...
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : PEGASUS-LIVE [PEGASUS-LIVE]
+Currency : HKD
+Attempt  : 1
+==============================================
+Currency selected: HKD
+Currency validation PASS
+Waiting for merchants to load for HKD
+Merchant options found: 25
+Merchants selected: 25 / 25
+All merchants selected successfully for HKD
+Provider dropdown stale. Retry: 1
+Provider selected successfully: PEGASUS-LIVE [PEGASUS-LIVE]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : PEGASUS-LIVE [PEGASUS-LIVE]
+Currency : HKD
+Start    : 2026-09-08 09:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: PEGASUS-LIVE [PEGASUS-LIVE] | Actual: PEGASUS-LIVE [PEGASUS-LIVE] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 09:00:00 | Actual: 2026-09-08 09:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+SUCCESS TOAST NOT RECEIVED WITHIN 30 SECONDS.
+Status: UNCONFIRMED
+RESULT WRITTEN: PEGASUS-LIVE [PEGASUS-LIVE] | HKD | UNCONFIRMED
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : PEGASUS-LIVE [PEGASUS-LIVE]
+Currency : MYR
+Attempt  : 1
+==============================================
+Currency selected: MYR
+Currency validation PASS
+Waiting for merchants to load for MYR
+Merchant options found: 22
+Merchants selected: 22 / 22
+All merchants selected successfully for MYR
+Provider selected successfully: PEGASUS-LIVE [PEGASUS-LIVE]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : PEGASUS-LIVE [PEGASUS-LIVE]
+Currency : MYR
+Start    : 2026-09-08 09:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: PEGASUS-LIVE [PEGASUS-LIVE] | Actual: PEGASUS-LIVE [PEGASUS-LIVE] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 09:00:00 | Actual: 2026-09-08 09:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : PEGASUS-LIVE [PEGASUS-LIVE]
+Currency : MYR
+======================================
+RESULT WRITTEN: PEGASUS-LIVE [PEGASUS-LIVE] | MYR | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : PEGASUS-LIVE [PEGASUS-LIVE]
+Currency : NPR
+Attempt  : 1
+==============================================
+Currency selected: NPR
+Currency validation PASS
+Waiting for merchants to load for NPR
+Merchant options found: 32
+Merchants selected: 32 / 32
+All merchants selected successfully for NPR
+Provider selected successfully: PEGASUS-LIVE [PEGASUS-LIVE]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : PEGASUS-LIVE [PEGASUS-LIVE]
+Currency : NPR
+Start    : 2026-09-08 09:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: PEGASUS-LIVE [PEGASUS-LIVE] | Actual: PEGASUS-LIVE [PEGASUS-LIVE] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 09:00:00 | Actual: 2026-09-08 09:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : PEGASUS-LIVE [PEGASUS-LIVE]
+Currency : NPR
+======================================
+RESULT WRITTEN: PEGASUS-LIVE [PEGASUS-LIVE] | NPR | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : PEGASUS-LIVE [PEGASUS-LIVE]
+Currency : PHP
+Attempt  : 1
+==============================================
+Currency selected: PHP
+Currency validation PASS
+Waiting for merchants to load for PHP
+Merchant options found: 13
+Merchants selected: 13 / 13
+All merchants selected successfully for PHP
+Provider selected successfully: PEGASUS-LIVE [PEGASUS-LIVE]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : PEGASUS-LIVE [PEGASUS-LIVE]
+Currency : PHP
+Start    : 2026-09-08 09:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: PEGASUS-LIVE [PEGASUS-LIVE] | Actual: PEGASUS-LIVE [PEGASUS-LIVE] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 09:00:00 | Actual: 2026-09-08 09:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : PEGASUS-LIVE [PEGASUS-LIVE]
+Currency : PHP
+======================================
+RESULT WRITTEN: PEGASUS-LIVE [PEGASUS-LIVE] | PHP | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : PEGASUS-LIVE [PEGASUS-LIVE]
+Currency : MMK
+Attempt  : 1
+==============================================
+Currency selected: MMK
+Currency validation PASS
+Waiting for merchants to load for MMK
+Merchant options found: 2
+Merchants selected: 2 / 2
+All merchants selected successfully for MMK
+Provider selected successfully: PEGASUS-LIVE [PEGASUS-LIVE]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : PEGASUS-LIVE [PEGASUS-LIVE]
+Currency : MMK
+Start    : 2026-09-08 09:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: PEGASUS-LIVE [PEGASUS-LIVE] | Actual: PEGASUS-LIVE [PEGASUS-LIVE] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 09:00:00 | Actual: 2026-09-08 09:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : PEGASUS-LIVE [PEGASUS-LIVE]
+Currency : MMK
+======================================
+RESULT WRITTEN: PEGASUS-LIVE [PEGASUS-LIVE] | MMK | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : PEGASUS-LIVE [PEGASUS-LIVE]
+Currency : IDR
+Attempt  : 1
+==============================================
+Currency selected: IDR
+Currency validation PASS
+Waiting for merchants to load for IDR
+Merchant options found: 4
+Merchants selected: 4 / 4
+All merchants selected successfully for IDR
+Provider selected successfully: PEGASUS-LIVE [PEGASUS-LIVE]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : PEGASUS-LIVE [PEGASUS-LIVE]
+Currency : IDR
+Start    : 2026-09-08 09:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: PEGASUS-LIVE [PEGASUS-LIVE] | Actual: PEGASUS-LIVE [PEGASUS-LIVE] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 09:00:00 | Actual: 2026-09-08 09:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : PEGASUS-LIVE [PEGASUS-LIVE]
+Currency : IDR
+======================================
+RESULT WRITTEN: PEGASUS-LIVE [PEGASUS-LIVE] | IDR | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : PEGASUS-LIVE [PEGASUS-LIVE]
+Currency : USD
+Attempt  : 1
+==============================================
+Currency selected: USD
+Currency validation PASS
+Waiting for merchants to load for USD
+Merchant options found: 5
+Merchants selected: 5 / 5
+All merchants selected successfully for USD
+Provider selected successfully: PEGASUS-LIVE [PEGASUS-LIVE]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : PEGASUS-LIVE [PEGASUS-LIVE]
+Currency : USD
+Start    : 2026-09-08 09:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: PEGASUS-LIVE [PEGASUS-LIVE] | Actual: PEGASUS-LIVE [PEGASUS-LIVE] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 09:00:00 | Actual: 2026-09-08 09:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : PEGASUS-LIVE [PEGASUS-LIVE]
+Currency : USD
+======================================
+RESULT WRITTEN: PEGASUS-LIVE [PEGASUS-LIVE] | USD | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : PEGASUS-LIVE [PEGASUS-LIVE]
+Currency : VND
+Attempt  : 1
+==============================================
+Currency selected: VND
+Currency validation PASS
+Waiting for merchants to load for VND
+Merchant options found: 3
+Merchants selected: 3 / 3
+All merchants selected successfully for VND
+Provider selected successfully: PEGASUS-LIVE [PEGASUS-LIVE]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : PEGASUS-LIVE [PEGASUS-LIVE]
+Currency : VND
+Start    : 2026-09-08 09:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: PEGASUS-LIVE [PEGASUS-LIVE] | Actual: PEGASUS-LIVE [PEGASUS-LIVE] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 09:00:00 | Actual: 2026-09-08 09:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : PEGASUS-LIVE [PEGASUS-LIVE]
+Currency : VND
+======================================
+RESULT WRITTEN: PEGASUS-LIVE [PEGASUS-LIVE] | VND | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : PEGASUS-LIVE [PEGASUS-LIVE]
+Currency : LAK
+Attempt  : 1
+==============================================
+Currency selected: LAK
+Currency validation PASS
+Waiting for merchants to load for LAK
+Merchant options found: 2
+Merchants selected: 2 / 2
+All merchants selected successfully for LAK
+Provider selected successfully: PEGASUS-LIVE [PEGASUS-LIVE]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : PEGASUS-LIVE [PEGASUS-LIVE]
+Currency : LAK
+Start    : 2026-09-08 09:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: PEGASUS-LIVE [PEGASUS-LIVE] | Actual: PEGASUS-LIVE [PEGASUS-LIVE] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 09:00:00 | Actual: 2026-09-08 09:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : PEGASUS-LIVE [PEGASUS-LIVE]
+Currency : LAK
+======================================
+RESULT WRITTEN: PEGASUS-LIVE [PEGASUS-LIVE] | LAK | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : PEGASUS-LIVE [PEGASUS-LIVE]
+Currency : TWD
+Attempt  : 1
+==============================================
+Currency selected: TWD
+Currency validation PASS
+Waiting for merchants to load for TWD
+Merchant options found: 2
+Merchants selected: 2 / 2
+All merchants selected successfully for TWD
+Provider selected successfully: PEGASUS-LIVE [PEGASUS-LIVE]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : PEGASUS-LIVE [PEGASUS-LIVE]
+Currency : TWD
+Start    : 2026-09-08 09:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: PEGASUS-LIVE [PEGASUS-LIVE] | Actual: PEGASUS-LIVE [PEGASUS-LIVE] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 09:00:00 | Actual: 2026-09-08 09:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : PEGASUS-LIVE [PEGASUS-LIVE]
+Currency : TWD
+======================================
+RESULT WRITTEN: PEGASUS-LIVE [PEGASUS-LIVE] | TWD | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : PEGASUS-LIVE [PEGASUS-LIVE]
+Currency : PGK
+Attempt  : 1
+==============================================
+Currency selected: PGK
+Currency validation PASS
+Waiting for merchants to load for PGK
+Merchant options found: 3
+Merchants selected: 3 / 3
+All merchants selected successfully for PGK
+Provider selected successfully: PEGASUS-LIVE [PEGASUS-LIVE]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : PEGASUS-LIVE [PEGASUS-LIVE]
+Currency : PGK
+Start    : 2026-09-08 09:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: PEGASUS-LIVE [PEGASUS-LIVE] | Actual: PEGASUS-LIVE [PEGASUS-LIVE] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 09:00:00 | Actual: 2026-09-08 09:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : PEGASUS-LIVE [PEGASUS-LIVE]
+Currency : PGK
+======================================
+RESULT WRITTEN: PEGASUS-LIVE [PEGASUS-LIVE] | PGK | PASS
+Modal Cancel clicked.
+Last currency completed for provider: PEGASUS-LIVE [PEGASUS-LIVE]
+No new modal will be opened.
+
+==============================================
+NORMAL CURRENCY PROCESSING COMPLETED
+Provider : PEGASUS-LIVE [PEGASUS-LIVE]
+Failed currencies:
+AUD -> Currency selection failed
+==============================================
+
+**********************************************
+STARTING RETRY OF FAILED CURRENCIES
+Provider : PEGASUS-LIVE [PEGASUS-LIVE]
+**********************************************
+
+----------------------------------------------
+RETRY ATTEMPT : 2
+Provider : PEGASUS-LIVE [PEGASUS-LIVE]
+Currency : AUD
+Original Error : Currency selection failed
+----------------------------------------------
+Fresh Add Notification modal opened.
+Currency selected: AUD
+Currency validation PASS
+Waiting for merchants to load for AUD
+Merchant options found: 25
+Merchants selected: 25 / 25
+All merchants selected successfully for AUD
+Provider selected successfully: PEGASUS-LIVE [PEGASUS-LIVE]
+
+========== VALIDATION START ==========
+Provider Validation | Expected: PEGASUS-LIVE [PEGASUS-LIVE] | Actual: PEGASUS-LIVE [PEGASUS-LIVE] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 09:00:00 | Actual: 2026-09-08 09:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+Retry Save clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : PEGASUS-LIVE [PEGASUS-LIVE]
+Currency : AUD
+======================================
+RESULT WRITTEN: PEGASUS-LIVE [PEGASUS-LIVE] | AUD | RETRY-PASS
+Modal Cancel clicked.
+
+##############################################
+PROVIDER COMPLETED
+Provider : PEGASUS-LIVE [PEGASUS-LIVE]
+##############################################
+
+##############################################
+STARTING PROVIDER
+Provider : PEGASUS-SLOT [PEGASUS-SLOT]
+Start    : 2026-09-08 09:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+##############################################
+Fresh Add Notification modal opened.
+Currencies available: [THB, BDT, INR, PKR, SGD, AUD, HKD, MYR, NPR, PHP, MMK, IDR, USD, VND, LAK, TWD, PGK]
+
+==============================================
+Provider : PEGASUS-SLOT [PEGASUS-SLOT]
+Currency : THB
+Attempt  : 1
+==============================================
+Currency selected: THB
+Currency validation PASS
+Waiting for merchants to load for THB
+Merchant options found: 38
+Merchants selected: 38 / 38
+All merchants selected successfully for THB
+Provider selected successfully: PEGASUS-SLOT [PEGASUS-SLOT]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : PEGASUS-SLOT [PEGASUS-SLOT]
+Currency : THB
+Start    : 2026-09-08 09:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: PEGASUS-SLOT [PEGASUS-SLOT] | Actual: PEGASUS-SLOT [PEGASUS-SLOT] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 09:00:00 | Actual: 2026-09-08 09:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : PEGASUS-SLOT [PEGASUS-SLOT]
+Currency : THB
+======================================
+RESULT WRITTEN: PEGASUS-SLOT [PEGASUS-SLOT] | THB | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : PEGASUS-SLOT [PEGASUS-SLOT]
+Currency : BDT
+Attempt  : 1
+==============================================
+Currency selected: BDT
+Currency validation PASS
+Waiting for merchants to load for BDT
+Merchant options found: 11
+Merchants selected: 11 / 11
+All merchants selected successfully for BDT
+Provider selected successfully: PEGASUS-SLOT [PEGASUS-SLOT]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : PEGASUS-SLOT [PEGASUS-SLOT]
+Currency : BDT
+Start    : 2026-09-08 09:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: PEGASUS-SLOT [PEGASUS-SLOT] | Actual: PEGASUS-SLOT [PEGASUS-SLOT] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 09:00:00 | Actual: 2026-09-08 09:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : PEGASUS-SLOT [PEGASUS-SLOT]
+Currency : BDT
+======================================
+RESULT WRITTEN: PEGASUS-SLOT [PEGASUS-SLOT] | BDT | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : PEGASUS-SLOT [PEGASUS-SLOT]
+Currency : INR
+Attempt  : 1
+==============================================
+Currency selected: INR
+Currency validation PASS
+Waiting for merchants to load for INR
+Merchant options found: 5
+Merchants selected: 5 / 5
+All merchants selected successfully for INR
+Provider selected successfully: PEGASUS-SLOT [PEGASUS-SLOT]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : PEGASUS-SLOT [PEGASUS-SLOT]
+Currency : INR
+Start    : 2026-09-08 09:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: PEGASUS-SLOT [PEGASUS-SLOT] | Actual: PEGASUS-SLOT [PEGASUS-SLOT] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 09:00:00 | Actual: 2026-09-08 09:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : PEGASUS-SLOT [PEGASUS-SLOT]
+Currency : INR
+======================================
+RESULT WRITTEN: PEGASUS-SLOT [PEGASUS-SLOT] | INR | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : PEGASUS-SLOT [PEGASUS-SLOT]
+Currency : PKR
+Attempt  : 1
+==============================================
+Currency selected: PKR
+Currency validation PASS
+Waiting for merchants to load for PKR
+Merchant options found: 4
+Merchants selected: 4 / 4
+All merchants selected successfully for PKR
+Provider selected successfully: PEGASUS-SLOT [PEGASUS-SLOT]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : PEGASUS-SLOT [PEGASUS-SLOT]
+Currency : PKR
+Start    : 2026-09-08 09:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: PEGASUS-SLOT [PEGASUS-SLOT] | Actual: PEGASUS-SLOT [PEGASUS-SLOT] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 09:00:00 | Actual: 2026-09-08 09:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : PEGASUS-SLOT [PEGASUS-SLOT]
+Currency : PKR
+======================================
+RESULT WRITTEN: PEGASUS-SLOT [PEGASUS-SLOT] | PKR | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : PEGASUS-SLOT [PEGASUS-SLOT]
+Currency : SGD
+Attempt  : 1
+==============================================
+Currency selected: SGD
+Currency validation PASS
+Waiting for merchants to load for SGD
+Merchant options found: 9
+Merchants selected: 9 / 9
+All merchants selected successfully for SGD
+Provider selected successfully: PEGASUS-SLOT [PEGASUS-SLOT]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : PEGASUS-SLOT [PEGASUS-SLOT]
+Currency : SGD
+Start    : 2026-09-08 09:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: PEGASUS-SLOT [PEGASUS-SLOT] | Actual: PEGASUS-SLOT [PEGASUS-SLOT] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 09:00:00 | Actual: 2026-09-08 09:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : PEGASUS-SLOT [PEGASUS-SLOT]
+Currency : SGD
+======================================
+RESULT WRITTEN: PEGASUS-SLOT [PEGASUS-SLOT] | SGD | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : PEGASUS-SLOT [PEGASUS-SLOT]
+Currency : AUD
+Attempt  : 1
+==============================================
+Currency selected: AUD
+Currency validation PASS
+Waiting for merchants to load for AUD
+Merchant options found: 25
+Merchants selected: 25 / 25
+All merchants selected successfully for AUD
+Provider selected successfully: PEGASUS-SLOT [PEGASUS-SLOT]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : PEGASUS-SLOT [PEGASUS-SLOT]
+Currency : AUD
+Start    : 2026-09-08 09:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: PEGASUS-SLOT [PEGASUS-SLOT] | Actual: PEGASUS-SLOT [PEGASUS-SLOT] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 09:00:00 | Actual: 2026-09-08 09:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : PEGASUS-SLOT [PEGASUS-SLOT]
+Currency : AUD
+======================================
+RESULT WRITTEN: PEGASUS-SLOT [PEGASUS-SLOT] | AUD | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : PEGASUS-SLOT [PEGASUS-SLOT]
+Currency : HKD
+Attempt  : 1
+==============================================
+Currency selected: HKD
+Currency validation PASS
+Waiting for merchants to load for HKD
+Merchant options found: 3
+Merchants selected: 3 / 3
+All merchants selected successfully for HKD
+Provider selected successfully: PEGASUS-SLOT [PEGASUS-SLOT]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : PEGASUS-SLOT [PEGASUS-SLOT]
+Currency : HKD
+Start    : 2026-09-08 09:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: PEGASUS-SLOT [PEGASUS-SLOT] | Actual: PEGASUS-SLOT [PEGASUS-SLOT] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 09:00:00 | Actual: 2026-09-08 09:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : PEGASUS-SLOT [PEGASUS-SLOT]
+Currency : HKD
+======================================
+RESULT WRITTEN: PEGASUS-SLOT [PEGASUS-SLOT] | HKD | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : PEGASUS-SLOT [PEGASUS-SLOT]
+Currency : MYR
+Attempt  : 1
+==============================================
+Currency selected: MYR
+Currency validation PASS
+Waiting for merchants to load for MYR
+Merchant options found: 22
+Merchants selected: 22 / 22
+All merchants selected successfully for MYR
+Provider selected successfully: PEGASUS-SLOT [PEGASUS-SLOT]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : PEGASUS-SLOT [PEGASUS-SLOT]
+Currency : MYR
+Start    : 2026-09-08 09:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: PEGASUS-SLOT [PEGASUS-SLOT] | Actual: PEGASUS-SLOT [PEGASUS-SLOT] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 09:00:00 | Actual: 2026-09-08 09:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : PEGASUS-SLOT [PEGASUS-SLOT]
+Currency : MYR
+======================================
+RESULT WRITTEN: PEGASUS-SLOT [PEGASUS-SLOT] | MYR | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : PEGASUS-SLOT [PEGASUS-SLOT]
+Currency : NPR
+Attempt  : 1
+==============================================
+Currency selected: NPR
+Currency validation PASS
+Waiting for merchants to load for NPR
+Merchant options found: 32
+Merchants selected: 32 / 32
+All merchants selected successfully for NPR
+Provider selected successfully: PEGASUS-SLOT [PEGASUS-SLOT]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : PEGASUS-SLOT [PEGASUS-SLOT]
+Currency : NPR
+Start    : 2026-09-08 09:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: PEGASUS-SLOT [PEGASUS-SLOT] | Actual: PEGASUS-SLOT [PEGASUS-SLOT] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 09:00:00 | Actual: 2026-09-08 09:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : PEGASUS-SLOT [PEGASUS-SLOT]
+Currency : NPR
+======================================
+RESULT WRITTEN: PEGASUS-SLOT [PEGASUS-SLOT] | NPR | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : PEGASUS-SLOT [PEGASUS-SLOT]
+Currency : PHP
+Attempt  : 1
+==============================================
+Currency selected: PHP
+Currency validation PASS
+Waiting for merchants to load for PHP
+Merchant options found: 13
+Merchants selected: 13 / 13
+All merchants selected successfully for PHP
+Provider selected successfully: PEGASUS-SLOT [PEGASUS-SLOT]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : PEGASUS-SLOT [PEGASUS-SLOT]
+Currency : PHP
+Start    : 2026-09-08 09:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: PEGASUS-SLOT [PEGASUS-SLOT] | Actual: PEGASUS-SLOT [PEGASUS-SLOT] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 09:00:00 | Actual: 2026-09-08 09:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : PEGASUS-SLOT [PEGASUS-SLOT]
+Currency : PHP
+======================================
+RESULT WRITTEN: PEGASUS-SLOT [PEGASUS-SLOT] | PHP | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : PEGASUS-SLOT [PEGASUS-SLOT]
+Currency : MMK
+Attempt  : 1
+==============================================
+Currency selected: MMK
+Currency validation PASS
+Waiting for merchants to load for MMK
+Merchant options found: 2
+Merchants selected: 2 / 2
+All merchants selected successfully for MMK
+Provider selected successfully: PEGASUS-SLOT [PEGASUS-SLOT]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : PEGASUS-SLOT [PEGASUS-SLOT]
+Currency : MMK
+Start    : 2026-09-08 09:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: PEGASUS-SLOT [PEGASUS-SLOT] | Actual: PEGASUS-SLOT [PEGASUS-SLOT] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 09:00:00 | Actual: 2026-09-08 09:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : PEGASUS-SLOT [PEGASUS-SLOT]
+Currency : MMK
+======================================
+RESULT WRITTEN: PEGASUS-SLOT [PEGASUS-SLOT] | MMK | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : PEGASUS-SLOT [PEGASUS-SLOT]
+Currency : IDR
+Attempt  : 1
+==============================================
+Currency selected: IDR
+Currency validation PASS
+Waiting for merchants to load for IDR
+Merchant options found: 4
+Merchants selected: 4 / 4
+All merchants selected successfully for IDR
+Provider selected successfully: PEGASUS-SLOT [PEGASUS-SLOT]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : PEGASUS-SLOT [PEGASUS-SLOT]
+Currency : IDR
+Start    : 2026-09-08 09:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: PEGASUS-SLOT [PEGASUS-SLOT] | Actual: PEGASUS-SLOT [PEGASUS-SLOT] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 09:00:00 | Actual: 2026-09-08 09:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : PEGASUS-SLOT [PEGASUS-SLOT]
+Currency : IDR
+======================================
+RESULT WRITTEN: PEGASUS-SLOT [PEGASUS-SLOT] | IDR | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : PEGASUS-SLOT [PEGASUS-SLOT]
+Currency : USD
+Attempt  : 1
+==============================================
+Currency selected: USD
+Currency validation PASS
+Waiting for merchants to load for USD
+Merchant options found: 5
+Merchants selected: 5 / 5
+All merchants selected successfully for USD
+Provider selected successfully: PEGASUS-SLOT [PEGASUS-SLOT]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : PEGASUS-SLOT [PEGASUS-SLOT]
+Currency : USD
+Start    : 2026-09-08 09:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: PEGASUS-SLOT [PEGASUS-SLOT] | Actual: PEGASUS-SLOT [PEGASUS-SLOT] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 09:00:00 | Actual: 2026-09-08 09:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : PEGASUS-SLOT [PEGASUS-SLOT]
+Currency : USD
+======================================
+RESULT WRITTEN: PEGASUS-SLOT [PEGASUS-SLOT] | USD | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : PEGASUS-SLOT [PEGASUS-SLOT]
+Currency : VND
+Attempt  : 1
+==============================================
+Currency selected: VND
+Currency validation PASS
+Waiting for merchants to load for VND
+Merchant options found: 3
+Merchants selected: 3 / 3
+All merchants selected successfully for VND
+Provider selected successfully: PEGASUS-SLOT [PEGASUS-SLOT]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : PEGASUS-SLOT [PEGASUS-SLOT]
+Currency : VND
+Start    : 2026-09-08 09:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: PEGASUS-SLOT [PEGASUS-SLOT] | Actual: PEGASUS-SLOT [PEGASUS-SLOT] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 09:00:00 | Actual: 2026-09-08 09:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : PEGASUS-SLOT [PEGASUS-SLOT]
+Currency : VND
+======================================
+RESULT WRITTEN: PEGASUS-SLOT [PEGASUS-SLOT] | VND | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : PEGASUS-SLOT [PEGASUS-SLOT]
+Currency : LAK
+Attempt  : 1
+==============================================
+Currency selected: LAK
+Currency validation PASS
+Waiting for merchants to load for LAK
+Merchant options found: 2
+Merchants selected: 2 / 2
+All merchants selected successfully for LAK
+Provider selected successfully: PEGASUS-SLOT [PEGASUS-SLOT]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : PEGASUS-SLOT [PEGASUS-SLOT]
+Currency : LAK
+Start    : 2026-09-08 09:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: PEGASUS-SLOT [PEGASUS-SLOT] | Actual: PEGASUS-SLOT [PEGASUS-SLOT] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 09:00:00 | Actual: 2026-09-08 09:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : PEGASUS-SLOT [PEGASUS-SLOT]
+Currency : LAK
+======================================
+RESULT WRITTEN: PEGASUS-SLOT [PEGASUS-SLOT] | LAK | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : PEGASUS-SLOT [PEGASUS-SLOT]
+Currency : TWD
+Attempt  : 1
+==============================================
+Currency selected: TWD
+Currency validation PASS
+Waiting for merchants to load for TWD
+Merchant options found: 2
+Merchants selected: 2 / 2
+All merchants selected successfully for TWD
+Provider selected successfully: PEGASUS-SLOT [PEGASUS-SLOT]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : PEGASUS-SLOT [PEGASUS-SLOT]
+Currency : TWD
+Start    : 2026-09-08 09:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: PEGASUS-SLOT [PEGASUS-SLOT] | Actual: PEGASUS-SLOT [PEGASUS-SLOT] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 09:00:00 | Actual: 2026-09-08 09:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : PEGASUS-SLOT [PEGASUS-SLOT]
+Currency : TWD
+======================================
+RESULT WRITTEN: PEGASUS-SLOT [PEGASUS-SLOT] | TWD | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : PEGASUS-SLOT [PEGASUS-SLOT]
+Currency : PGK
+Attempt  : 1
+==============================================
+Currency selected: PGK
+Currency validation PASS
+Waiting for merchants to load for PGK
+Merchant options found: 3
+Merchants selected: 3 / 3
+All merchants selected successfully for PGK
+Provider selected successfully: PEGASUS-SLOT [PEGASUS-SLOT]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : PEGASUS-SLOT [PEGASUS-SLOT]
+Currency : PGK
+Start    : 2026-09-08 09:00:00
+End      : 2026-09-08 12:00:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: PEGASUS-SLOT [PEGASUS-SLOT] | Actual: PEGASUS-SLOT [PEGASUS-SLOT] | Result: PASS
+Start Date Validation | Expected: 2026-09-08 09:00:00 | Actual: 2026-09-08 09:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-08 12:00:00 | Actual: 2026-09-08 12:00:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : PEGASUS-SLOT [PEGASUS-SLOT]
+Currency : PGK
+======================================
+RESULT WRITTEN: PEGASUS-SLOT [PEGASUS-SLOT] | PGK | PASS
+Modal Cancel clicked.
+Last currency completed for provider: PEGASUS-SLOT [PEGASUS-SLOT]
+No new modal will be opened.
+
+==============================================
+NORMAL CURRENCY PROCESSING COMPLETED
+Provider : PEGASUS-SLOT [PEGASUS-SLOT]
+No definite failed currencies.
+==============================================
+
+##############################################
+PROVIDER COMPLETED
+Provider : PEGASUS-SLOT [PEGASUS-SLOT]
+##############################################
+Blank provider row found.
+Skipping Excel row.
+Blank provider row found.
+Skipping Excel row.
+Blank provider row found.
+Skipping Excel row.
+Blank provider row found.
+Skipping Excel row.
+Blank provider row found.
+Skipping Excel row.
+Blank provider row found.
+Skipping Excel row.
+
+==============================================
+ALL EXCEL PROVIDERS COMPLETED
+==============================================
+[WARNING] thread Thread[#48,CompletableFutureDelayScheduler,5,com.framework.practice] was interrupted but is still alive after waiting at least 14996msecs
+[WARNING] thread Thread[#48,CompletableFutureDelayScheduler,5,com.framework.practice] will linger despite being asked to die via interruption
+[WARNING] thread Thread[#64,UrlChecker-3,5,com.framework.practice] will linger despite being asked to die via interruption
+[WARNING] NOTE: 2 thread(s) did not finish despite being asked to via interruption. This is not a problem with exec:java, it is a problem with the running code. Although not serious, it should be remedied.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  20:23 min
+[INFO] Finished at: 2026-09-07T12:50:44+05:30
+[INFO] ------------------------------------------------------------------------
+ 
+Automation Exit Code: 0 
+Automation Finished: Mon 09/07/2026 12:50:44.41 
+========================================== 
