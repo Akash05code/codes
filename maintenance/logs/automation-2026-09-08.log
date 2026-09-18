@@ -9912,3 +9912,1030 @@ Waiting for merchants to load for PGK
 Merchant options found: 3
 Merchants selected: 3 / 3
 All merchants selected successfully for PGK
+Provider selected successfully: RELAXGAMING [RELAXGAMING]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : RELAXGAMING [RELAXGAMING]
+Currency : PGK
+Start    : 2026-09-09 12:00:00
+End      : 2026-09-09 13:30:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: RELAXGAMING [RELAXGAMING] | Actual: RELAXGAMING [RELAXGAMING] | Result: PASS
+Start Date Validation | Expected: 2026-09-09 12:00:00 | Actual: 2026-09-09 12:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-09 13:30:00 | Actual: 2026-09-09 13:30:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : RELAXGAMING [RELAXGAMING]
+Currency : PGK
+======================================
+RESULT WRITTEN: RELAXGAMING [RELAXGAMING] | PGK | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : RELAXGAMING [RELAXGAMING]
+Currency : LKR
+Attempt  : 1
+==============================================
+Currency selected: LKR
+Currency validation PASS
+Waiting for merchants to load for LKR
+Merchant options found: 1
+Merchants selected: 1 / 1
+All merchants selected successfully for LKR
+Provider selected successfully: RELAXGAMING [RELAXGAMING]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : RELAXGAMING [RELAXGAMING]
+Currency : LKR
+Start    : 2026-09-09 12:00:00
+End      : 2026-09-09 13:30:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: RELAXGAMING [RELAXGAMING] | Actual: RELAXGAMING [RELAXGAMING] | Result: PASS
+Start Date Validation | Expected: 2026-09-09 12:00:00 | Actual: 2026-09-09 12:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-09 13:30:00 | Actual: 2026-09-09 13:30:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : RELAXGAMING [RELAXGAMING]
+Currency : LKR
+======================================
+RESULT WRITTEN: RELAXGAMING [RELAXGAMING] | LKR | PASS
+Modal Cancel clicked.
+Last currency completed for provider: RELAXGAMING [RELAXGAMING]
+No new modal will be opened.
+
+==============================================
+NORMAL CURRENCY PROCESSING COMPLETED
+Provider : RELAXGAMING [RELAXGAMING]
+No definite failed currencies.
+==============================================
+
+##############################################
+PROVIDER COMPLETED
+Provider : RELAXGAMING [RELAXGAMING]
+##############################################
+
+##############################################
+STARTING PROVIDER
+Provider : RLX [RLX]
+Start    : 2026-09-09 12:00:00
+End      : 2026-09-09 13:30:00
+Remark   : Provider is on maintenance
+##############################################
+Fresh Add Notification modal opened.
+Currencies available: [THB, BDT, INR, PKR, SGD, AUD, HKD, MYR, NPR, PHP, MMK, IDR, USD, VND, LAK, TWD, PGK, LKR]
+
+==============================================
+Provider : RLX [RLX]
+Currency : THB
+Attempt  : 1
+==============================================
+Currency selected: THB
+Currency validation PASS
+Waiting for merchants to load for THB
+Merchant options found: 38
+Merchants selected: 38 / 38
+All merchants selected successfully for THB
+Provider selected successfully: RLX [RLX]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : RLX [RLX]
+Currency : THB
+Start    : 2026-09-09 12:00:00
+End      : 2026-09-09 13:30:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: RLX [RLX] | Actual: RLX [RLX] | Result: PASS
+Start Date Validation | Expected: 2026-09-09 12:00:00 | Actual: 2026-09-09 12:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-09 13:30:00 | Actual: 2026-09-09 13:30:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : RLX [RLX]
+Currency : THB
+======================================
+RESULT WRITTEN: RLX [RLX] | THB | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : RLX [RLX]
+Currency : BDT
+Attempt  : 1
+==============================================
+Currency selected: BDT
+Currency validation PASS
+Waiting for merchants to load for BDT
+Merchant options found: 11
+Merchants selected: 11 / 11
+All merchants selected successfully for BDT
+Provider selected successfully: RLX [RLX]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : RLX [RLX]
+Currency : BDT
+Start    : 2026-09-09 12:00:00
+End      : 2026-09-09 13:30:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: RLX [RLX] | Actual: RLX [RLX] | Result: PASS
+Start Date Validation | Expected: 2026-09-09 12:00:00 | Actual: 2026-09-09 12:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-09 13:30:00 | Actual: 2026-09-09 13:30:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : RLX [RLX]
+Currency : BDT
+======================================
+RESULT WRITTEN: RLX [RLX] | BDT | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : RLX [RLX]
+Currency : INR
+Attempt  : 1
+==============================================
+Currency selected: INR
+Currency validation PASS
+Waiting for merchants to load for INR
+Merchant options found: 5
+Merchants selected: 5 / 5
+All merchants selected successfully for INR
+Provider selected successfully: RLX [RLX]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : RLX [RLX]
+Currency : INR
+Start    : 2026-09-09 12:00:00
+End      : 2026-09-09 13:30:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: RLX [RLX] | Actual: RLX [RLX] | Result: PASS
+Start Date Validation | Expected: 2026-09-09 12:00:00 | Actual: 2026-09-09 12:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-09 13:30:00 | Actual: 2026-09-09 13:30:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : RLX [RLX]
+Currency : INR
+======================================
+RESULT WRITTEN: RLX [RLX] | INR | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : RLX [RLX]
+Currency : PKR
+Attempt  : 1
+==============================================
+Currency selected: PKR
+Currency validation PASS
+AJAX loader did not disappear within 15 seconds.
+Currency AJAX did not finish.
+RESULT WRITTEN: RLX [RLX] | PKR | FAIL
+RECORDED FAIL: RLX [RLX] | PKR | Currency selection failed
+Modal Cancel clicked.
+Normal Add Notification click failed.
+Using JavaScript click...
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : RLX [RLX]
+Currency : SGD
+Attempt  : 1
+==============================================
+Currency selected: SGD
+Currency validation PASS
+Waiting for merchants to load for SGD
+Merchant options found: 9
+Merchants selected: 9 / 9
+All merchants selected successfully for SGD
+Provider selected successfully: RLX [RLX]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : RLX [RLX]
+Currency : SGD
+Start    : 2026-09-09 12:00:00
+End      : 2026-09-09 13:30:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: RLX [RLX] | Actual: RLX [RLX] | Result: PASS
+Start Date Validation | Expected: 2026-09-09 12:00:00 | Actual: 2026-09-09 12:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-09 13:30:00 | Actual: 2026-09-09 13:30:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : RLX [RLX]
+Currency : SGD
+======================================
+RESULT WRITTEN: RLX [RLX] | SGD | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : RLX [RLX]
+Currency : AUD
+Attempt  : 1
+==============================================
+Currency selected: AUD
+Currency validation PASS
+Waiting for merchants to load for AUD
+Merchant options found: 25
+Merchants selected: 25 / 25
+All merchants selected successfully for AUD
+Provider selected successfully: RLX [RLX]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : RLX [RLX]
+Currency : AUD
+Start    : 2026-09-09 12:00:00
+End      : 2026-09-09 13:30:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: RLX [RLX] | Actual: RLX [RLX] | Result: PASS
+Start Date Validation | Expected: 2026-09-09 12:00:00 | Actual: 2026-09-09 12:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-09 13:30:00 | Actual: 2026-09-09 13:30:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : RLX [RLX]
+Currency : AUD
+======================================
+RESULT WRITTEN: RLX [RLX] | AUD | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : RLX [RLX]
+Currency : HKD
+Attempt  : 1
+==============================================
+Currency selected: HKD
+Currency validation PASS
+Waiting for merchants to load for HKD
+Merchant options found: 3
+Merchants selected: 3 / 3
+All merchants selected successfully for HKD
+Provider selected successfully: RLX [RLX]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : RLX [RLX]
+Currency : HKD
+Start    : 2026-09-09 12:00:00
+End      : 2026-09-09 13:30:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: RLX [RLX] | Actual: RLX [RLX] | Result: PASS
+Start Date Validation | Expected: 2026-09-09 12:00:00 | Actual: 2026-09-09 12:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-09 13:30:00 | Actual: 2026-09-09 13:30:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : RLX [RLX]
+Currency : HKD
+======================================
+RESULT WRITTEN: RLX [RLX] | HKD | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : RLX [RLX]
+Currency : MYR
+Attempt  : 1
+==============================================
+Currency selected: MYR
+Currency validation PASS
+Waiting for merchants to load for MYR
+Merchant options found: 22
+Merchants selected: 22 / 22
+All merchants selected successfully for MYR
+Provider selected successfully: RLX [RLX]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : RLX [RLX]
+Currency : MYR
+Start    : 2026-09-09 12:00:00
+End      : 2026-09-09 13:30:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: RLX [RLX] | Actual: RLX [RLX] | Result: PASS
+Start Date Validation | Expected: 2026-09-09 12:00:00 | Actual: 2026-09-09 12:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-09 13:30:00 | Actual: 2026-09-09 13:30:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : RLX [RLX]
+Currency : MYR
+======================================
+RESULT WRITTEN: RLX [RLX] | MYR | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : RLX [RLX]
+Currency : NPR
+Attempt  : 1
+==============================================
+Currency selected: NPR
+Currency validation PASS
+Waiting for merchants to load for NPR
+Merchant options found: 32
+Merchants selected: 32 / 32
+All merchants selected successfully for NPR
+Provider selected successfully: RLX [RLX]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : RLX [RLX]
+Currency : NPR
+Start    : 2026-09-09 12:00:00
+End      : 2026-09-09 13:30:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: RLX [RLX] | Actual: RLX [RLX] | Result: PASS
+Start Date Validation | Expected: 2026-09-09 12:00:00 | Actual: 2026-09-09 12:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-09 13:30:00 | Actual: 2026-09-09 13:30:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : RLX [RLX]
+Currency : NPR
+======================================
+RESULT WRITTEN: RLX [RLX] | NPR | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : RLX [RLX]
+Currency : PHP
+Attempt  : 1
+==============================================
+Currency selected: PHP
+Currency validation PASS
+Waiting for merchants to load for PHP
+Merchant options found: 13
+Merchants selected: 13 / 13
+All merchants selected successfully for PHP
+Provider selected successfully: RLX [RLX]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : RLX [RLX]
+Currency : PHP
+Start    : 2026-09-09 12:00:00
+End      : 2026-09-09 13:30:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: RLX [RLX] | Actual: RLX [RLX] | Result: PASS
+Start Date Validation | Expected: 2026-09-09 12:00:00 | Actual: 2026-09-09 12:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-09 13:30:00 | Actual: 2026-09-09 13:30:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : RLX [RLX]
+Currency : PHP
+======================================
+RESULT WRITTEN: RLX [RLX] | PHP | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : RLX [RLX]
+Currency : MMK
+Attempt  : 1
+==============================================
+Currency selected: MMK
+Currency validation PASS
+Waiting for merchants to load for MMK
+Merchant options found: 2
+Merchants selected: 2 / 2
+All merchants selected successfully for MMK
+Provider selected successfully: RLX [RLX]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : RLX [RLX]
+Currency : MMK
+Start    : 2026-09-09 12:00:00
+End      : 2026-09-09 13:30:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: RLX [RLX] | Actual: RLX [RLX] | Result: PASS
+Start Date Validation | Expected: 2026-09-09 12:00:00 | Actual: 2026-09-09 12:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-09 13:30:00 | Actual: 2026-09-09 13:30:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : RLX [RLX]
+Currency : MMK
+======================================
+RESULT WRITTEN: RLX [RLX] | MMK | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : RLX [RLX]
+Currency : IDR
+Attempt  : 1
+==============================================
+Currency selected: IDR
+Currency validation PASS
+Waiting for merchants to load for IDR
+Merchant options found: 4
+Merchants selected: 4 / 4
+All merchants selected successfully for IDR
+Provider selected successfully: RLX [RLX]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : RLX [RLX]
+Currency : IDR
+Start    : 2026-09-09 12:00:00
+End      : 2026-09-09 13:30:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: RLX [RLX] | Actual: RLX [RLX] | Result: PASS
+Start Date Validation | Expected: 2026-09-09 12:00:00 | Actual: 2026-09-09 12:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-09 13:30:00 | Actual: 2026-09-09 13:30:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : RLX [RLX]
+Currency : IDR
+======================================
+RESULT WRITTEN: RLX [RLX] | IDR | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : RLX [RLX]
+Currency : USD
+Attempt  : 1
+==============================================
+Currency selected: USD
+Currency validation PASS
+Waiting for merchants to load for USD
+Merchant options found: 5
+Merchants selected: 5 / 5
+All merchants selected successfully for USD
+Provider selected successfully: RLX [RLX]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : RLX [RLX]
+Currency : USD
+Start    : 2026-09-09 12:00:00
+End      : 2026-09-09 13:30:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: RLX [RLX] | Actual: RLX [RLX] | Result: PASS
+Start Date Validation | Expected: 2026-09-09 12:00:00 | Actual: 2026-09-09 12:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-09 13:30:00 | Actual: 2026-09-09 13:30:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : RLX [RLX]
+Currency : USD
+======================================
+RESULT WRITTEN: RLX [RLX] | USD | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : RLX [RLX]
+Currency : VND
+Attempt  : 1
+==============================================
+Currency selected: VND
+Currency validation PASS
+Waiting for merchants to load for VND
+Merchant options found: 3
+Merchants selected: 3 / 3
+All merchants selected successfully for VND
+Provider selected successfully: RLX [RLX]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : RLX [RLX]
+Currency : VND
+Start    : 2026-09-09 12:00:00
+End      : 2026-09-09 13:30:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: RLX [RLX] | Actual: RLX [RLX] | Result: PASS
+Start Date Validation | Expected: 2026-09-09 12:00:00 | Actual: 2026-09-09 12:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-09 13:30:00 | Actual: 2026-09-09 13:30:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : RLX [RLX]
+Currency : VND
+======================================
+RESULT WRITTEN: RLX [RLX] | VND | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : RLX [RLX]
+Currency : LAK
+Attempt  : 1
+==============================================
+Currency selected: LAK
+Currency validation PASS
+Waiting for merchants to load for LAK
+Merchant options found: 2
+Merchants selected: 2 / 2
+All merchants selected successfully for LAK
+Provider selected successfully: RLX [RLX]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : RLX [RLX]
+Currency : LAK
+Start    : 2026-09-09 12:00:00
+End      : 2026-09-09 13:30:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: RLX [RLX] | Actual: RLX [RLX] | Result: PASS
+Start Date Validation | Expected: 2026-09-09 12:00:00 | Actual: 2026-09-09 12:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-09 13:30:00 | Actual: 2026-09-09 13:30:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : RLX [RLX]
+Currency : LAK
+======================================
+RESULT WRITTEN: RLX [RLX] | LAK | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : RLX [RLX]
+Currency : TWD
+Attempt  : 1
+==============================================
+Currency selected: TWD
+Currency validation PASS
+Waiting for merchants to load for TWD
+Merchant options found: 2
+Merchants selected: 2 / 2
+All merchants selected successfully for TWD
+Provider selected successfully: RLX [RLX]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : RLX [RLX]
+Currency : TWD
+Start    : 2026-09-09 12:00:00
+End      : 2026-09-09 13:30:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: RLX [RLX] | Actual: RLX [RLX] | Result: PASS
+Start Date Validation | Expected: 2026-09-09 12:00:00 | Actual: 2026-09-09 12:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-09 13:30:00 | Actual: 2026-09-09 13:30:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : RLX [RLX]
+Currency : TWD
+======================================
+RESULT WRITTEN: RLX [RLX] | TWD | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : RLX [RLX]
+Currency : PGK
+Attempt  : 1
+==============================================
+Currency selected: PGK
+Currency validation PASS
+Waiting for merchants to load for PGK
+Merchant options found: 3
+Merchants selected: 3 / 3
+All merchants selected successfully for PGK
+Provider selected successfully: RLX [RLX]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : RLX [RLX]
+Currency : PGK
+Start    : 2026-09-09 12:00:00
+End      : 2026-09-09 13:30:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: RLX [RLX] | Actual: RLX [RLX] | Result: PASS
+Start Date Validation | Expected: 2026-09-09 12:00:00 | Actual: 2026-09-09 12:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-09 13:30:00 | Actual: 2026-09-09 13:30:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : RLX [RLX]
+Currency : PGK
+======================================
+RESULT WRITTEN: RLX [RLX] | PGK | PASS
+Modal Cancel clicked.
+Fresh Add Notification modal opened.
+
+==============================================
+Provider : RLX [RLX]
+Currency : LKR
+Attempt  : 1
+==============================================
+Currency selected: LKR
+Currency validation PASS
+Waiting for merchants to load for LKR
+Merchant options found: 1
+Merchants selected: 1 / 1
+All merchants selected successfully for LKR
+Provider selected successfully: RLX [RLX]
+Start date validation PASS
+End date validation PASS
+Remark validation PASS
+
+======================================
+VALIDATING BEFORE SAVE
+Provider : RLX [RLX]
+Currency : LKR
+Start    : 2026-09-09 12:00:00
+End      : 2026-09-09 13:30:00
+Remark   : Provider is on maintenance
+======================================
+
+========== VALIDATION START ==========
+Provider Validation | Expected: RLX [RLX] | Actual: RLX [RLX] | Result: PASS
+Start Date Validation | Expected: 2026-09-09 12:00:00 | Actual: 2026-09-09 12:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-09 13:30:00 | Actual: 2026-09-09 13:30:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+ALL VALIDATIONS PASSED
+Waiting for AJAX processing...
+AJAX processing completed.
+Save button found.
+Save button clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : RLX [RLX]
+Currency : LKR
+======================================
+RESULT WRITTEN: RLX [RLX] | LKR | PASS
+Modal Cancel clicked.
+Last currency completed for provider: RLX [RLX]
+No new modal will be opened.
+
+==============================================
+NORMAL CURRENCY PROCESSING COMPLETED
+Provider : RLX [RLX]
+Failed currencies:
+PKR -> Currency selection failed
+==============================================
+
+**********************************************
+STARTING RETRY OF FAILED CURRENCIES
+Provider : RLX [RLX]
+**********************************************
+
+----------------------------------------------
+RETRY ATTEMPT : 2
+Provider : RLX [RLX]
+Currency : PKR
+Original Error : Currency selection failed
+----------------------------------------------
+Fresh Add Notification modal opened.
+Currency selected: PKR
+Currency validation PASS
+Waiting for merchants to load for PKR
+Merchant options found: 4
+Merchants selected: 4 / 4
+All merchants selected successfully for PKR
+Provider selected successfully: RLX [RLX]
+
+========== VALIDATION START ==========
+Provider Validation | Expected: RLX [RLX] | Actual: RLX [RLX] | Result: PASS
+Start Date Validation | Expected: 2026-09-09 12:00:00 | Actual: 2026-09-09 12:00:00 | Result: PASS
+End Date Validation | Expected: 2026-09-09 13:30:00 | Actual: 2026-09-09 13:30:00 | Result: PASS
+Remark Validation | Expected: Provider is on maintenance | Actual: Provider is on maintenance | Result: PASS
+--------------------------------------
+ALL VALIDATIONS PASSED
+========== VALIDATION END ============
+
+Retry Save clicked.
+
+======================================
+SUBMIT SUCCESSFUL
+Provider : RLX [RLX]
+Currency : PKR
+======================================
+RESULT WRITTEN: RLX [RLX] | PKR | RETRY-PASS
+Modal Cancel clicked.
+
+##############################################
+PROVIDER COMPLETED
+Provider : RLX [RLX]
+##############################################
+
+==============================================
+ALL EXCEL PROVIDERS COMPLETED
+==============================================
+[WARNING] thread Thread[#50,CompletableFutureDelayScheduler,5,com.framework.practice] was interrupted but is still alive after waiting at least 14995msecs
+[WARNING] thread Thread[#50,CompletableFutureDelayScheduler,5,com.framework.practice] will linger despite being asked to die via interruption
+[WARNING] thread Thread[#79,UrlChecker-3,5,com.framework.practice] will linger despite being asked to die via interruption
+[WARNING] NOTE: 2 thread(s) did not finish despite being asked to via interruption. This is not a problem with exec:java, it is a problem with the running code. Although not serious, it should be remedied.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:26 h
+[INFO] Finished at: 2026-09-08T12:45:27+05:30
+[INFO] ------------------------------------------------------------------------
+ 
+Automation Exit Code: 0 
+Automation Finished: Tue 09/08/2026 12:45:27.98 
+========================================== 

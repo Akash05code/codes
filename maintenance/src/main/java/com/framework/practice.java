@@ -835,9 +835,9 @@ public class practice {
                         "=============================================="
                 );
 
-                if (!failedCurrencies.isEmpty()) {
+             /*   if (!failedCurrencies.isEmpty()) {
 
-                    retryFailedCurrencies(
+                  retryFailedCurrencies(
                             driver,
                             wait,
                             js,
@@ -847,7 +847,7 @@ public class practice {
                             remarkValue,
                             failedCurrencies
                     );
-                }
+                }  */
 
                 System.out.println();
                 System.out.println(

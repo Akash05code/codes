@@ -19,7 +19,7 @@ public class GameTesting {
 
         driver.manage().window().maximize();
 
-        driver.get("https://www.doosra99.com/en-lk");
+        driver.get("https://www.bng8.net/en-np");
         Thread.sleep(20000);
 
         List<WebElement> providers = driver.findElements(
@@ -71,7 +71,7 @@ public class GameTesting {
 
                 System.out.println(" Clicked Play button " + (i + 1));
 
-                Thread.sleep(8000);
+                Thread.sleep(5000);
 
                 List<WebElement> errorPopup = driver.findElements(
                         By.xpath("//*[contains(text(),'Something went wrong')]")
